@@ -30,28 +30,44 @@
 			padding: 0;
 		}
 		.mck .text{
-			background-color: rgba(47, 18, 79, 0.7);
+			background-color: rgb(47, 18, 79);
 			position: absolute;
 			top: 0;
 			left: 0;
 			width: 100%;
 			height: 100%;
+			opacity: .7;
+		    transition: opacity .7s ease-out;
+		    -moz-transition: opacity .7s ease-out;
+		    -webkit-transition: opacity .7s ease-out;
+		    -o-transition: opacity .7s ease-out;
 		}
+		.mck .text:hover {
+			opacity: 1;
+		}
+
 		.portfolio{
 			background-image: url(pictures/backgrounds/Jacob_Troutman_Home.jpg);
 			background-repeat: no-repeat;
 			background-size: cover;
 			height: 100vh;
 			padding: 0;
-			background-color: blue;
 		}
 		.portfolio .text{
-			background-color: rgba(135, 6, 6, 0.7);
+			background-color: rgb(135, 6, 6);
 			position: absolute;
 			top: 0;
 			left: 0;
 			width: 100%;
 			height: 100%;
+			opacity: .7;
+		    transition: opacity .7s ease-out;
+		    -moz-transition: opacity .7s ease-out;
+		    -webkit-transition: opacity .7s ease-out;
+		    -o-transition: opacity .7s ease-out;
+		}
+		.portfolio .text:hover {
+			opacity: 1;
 		}
 	</style>
   </head>
@@ -61,14 +77,18 @@
 	<div class="row">
 		<div class="col-xs-6 col-md-6" style="padding: 0;">
 			<div class="mck">
-				<div class="text">
-				</div>
+				<a href="mck/home.html">
+					<div class="text">
+					</div>
+				</a>
 			</div>
 		</div>
 		<div class="col-xs-6 col-md-6" style="padding: 0;">
 			<div class="portfolio">
-				<div class="text">
-				</div>
+				<a href="profile/home.html">
+					<div class="text">
+					</div>
+				</a>
 			</div>
 		</div>
 	</div>

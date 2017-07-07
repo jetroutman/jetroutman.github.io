@@ -14,8 +14,7 @@
       <script src="https://oss.maxcdn.com/respond/1.1.2/respond.min.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.min.css">
-  <link type="text/css" rel="stylesheet" href="../css/Blueprint.css"/>
+  <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.min.css">
   <style>
     body{
       background-color: #171717;
@@ -23,6 +22,30 @@
       color: white;
       margin: 0;
     }
+    a{
+      text-decoration: none;
+      color: white;
+    }
+    a:hover{
+      text-decoration: none;
+      color: white;
+    }
+    .home .text{
+      background-color: rgb(204, 153, 0);
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: inherit;
+      opacity: .1;
+      transition: opacity 2s ease-out;
+      -moz-transition: opacity 2s ease-out;
+      -webkit-transition: opacity 2s ease-out;
+      -o-transition: opacity 2s ease-out;
+    }
+    .home .text:hover {
+      opacity: 1;
+    }
+
     .books{
       height: 100vh;
       padding: 0;
@@ -91,6 +114,16 @@
   </style>
 
 <body>
+  <div class="col-xs-12 col-md-12" style="padding: 0;">
+    <div class="home">
+      <a href="../index.html">
+        <div class="text">
+          <h1>Home</h1>
+        </div>
+      </a>
+    </div>
+  </div>
+
   <div class="col-xs-12 col-md-12" style="padding: 0;">
     <div class="books">
       <div class="text">

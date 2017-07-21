@@ -1,0 +1,183 @@
+body{
+  background-color: #171717;
+  font-size: 24px;
+  color: white;
+  margin: 0;
+}
+
+p{text-align: center;}
+
+/*about headings*/
+h3{
+  padding-top: 15px;
+  text-align: center;
+}
+/*link headings*/
+h1{
+  text-align: center;
+  margin: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-before: 0;
+}
+
+/*Menu*/
+.menu a:hover{
+  background-color: rgb(204, 153, 0);
+  border:hidden;
+}
+.menu{
+  display: inline-flex;
+  margin: 0;
+  text-align: center;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  min-width: 100%;
+  max-width: 100%;
+}
+a, a:hover, a:focus{
+  text-decoration: none;
+  color: white;
+}
+a{
+  width: 20vw;
+}
+/*Minimized menu*/
+span{
+  min-width: 100px;
+  border-bottom: solid white 1px;
+}
+button{
+  background-color: transparent;
+}
+
+/*Replace hover*/
+.highlight{
+  opacity: 1 !important;
+}
+
+/* For scroll button */
+.about{ /*Get it to the bottom of it's own div*/
+  display: table;
+}
+.scrollbtn{
+  height: 1px;
+  display: table-row;
+}
+.scrollbtn:hover .arrow{ /*Coloration of arrow and text*/
+  border-color:rgb(204, 153, 0);
+}
+.scrollbtn:hover{
+  cursor: pointer;
+  color: rgb(204, 153, 0);
+}
+.motivation .scrollbtn:hover .arrow{ /*Coloration of arrow and text*/
+  border-color: rgb(47, 18, 79);
+}
+.motivation .scrollbtn:hover{
+  font-weight: 500;
+  color: rgb(47, 18, 79);
+}
+.arrow{ /*Makes the arrow*/
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.down{
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+/*Where books(body) start at*/
+.books{
+  height: calc(100vh - 45px);
+  padding: 0;
+}
+.books .about{
+  background-color: rgb(47, 18, 79);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  opacity: .1;
+  transition: opacity 2s ease-out;
+  -moz-transition: opacity 2s ease-out;
+  -webkit-transition: opacity 2s ease-out;
+  -o-transition: opacity 2s ease-out;
+}
+.books .link{
+  color: black;
+  background-color: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  opacity: .1;
+  transition: opacity 2s ease-out;
+  -moz-transition: opacity 2s ease-out;
+  -webkit-transition: opacity 2s ease-out;
+  -o-transition: opacity 2s ease-out;
+}
+
+/*for quotes and stuff..anything to provide motivation
+Second section*/
+.motivation{
+  height: calc(100vh - 45px);
+  padding: 0;
+}
+.motivation .about{
+  background-color: rgb(204, 153, 0);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  opacity: .1;
+  transition: opacity 2s ease-out;
+  -moz-transition: opacity 2s ease-out;
+  -webkit-transition: opacity 2s ease-out;
+  -o-transition: opacity 2s ease-out;
+}
+.motivation .link{
+  color: black;
+  background-color: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  opacity: .1;
+  transition: opacity 2s ease-out;
+  -moz-transition: opacity 2s ease-out;
+  -webkit-transition: opacity 2s ease-out;
+  -o-transition: opacity 2s ease-out;
+}
+/*funny shit 3rd Section needs warning*/
+.shit{
+  height: calc(100vh - 45px);
+  padding: 0;
+}
+.shit .about{
+  background-color: rgb(47, 18, 79);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  opacity: .1;
+  transition: opacity 2s ease-out;
+  -moz-transition: opacity 2s ease-out;
+  -webkit-transition: opacity 2s ease-out;
+  -o-transition: opacity 2s ease-out;
+}
+.shit .link{
+  color: black;
+  background-color: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  opacity: .1;
+  transition: opacity 2s ease-out;
+  -moz-transition: opacity 2s ease-out;
+  -webkit-transition: opacity 2s ease-out;
+  -o-transition: opacity 2s ease-out;
+}

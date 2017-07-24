@@ -9,7 +9,6 @@ function Highlight(){
 	var pageheight = window.innerHeight - 46;
 	if (window.pageYOffset < pageheight){
 		$(".highlight").removeClass("highlight");
-<<<<<<< HEAD
 		$(".first-panel").addClass("highlight");
 	}else if(window.pageYOffset < (pageheight + pageheight)){
 		$(".highlight").removeClass("highlight");
@@ -35,6 +34,11 @@ $(document).ready(function (){
 		menuSize();
 	});
 });
+$(document).click(function(event) {
+    if(!$(event.target).closest('#nav').length) {
+        $(".mini-menu").removeClass("active");
+    }
+})
 
 function menuSize(){
 	var pageWidth = window.innerWidth;

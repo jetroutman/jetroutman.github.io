@@ -1,0 +1,29 @@
+Documentation- Getting Started with Game Dev
+======================================================================================
+
+Choosing an Engine:
+
+	First comes choosing an engine, which much like choosing a game console comes down to personal preference, but also what your goals are
+
+	Visual Scripting -- These are node based interfaces that empowers developers who are not as strong in programming to have full capabilities of the engine, however they all have different User Interfaces(UIs).
+
+	Unreal Engines 4 - Is considered the more professional engine between Unreal and Unity, because of the accessibility with C++ at its backbone. Due to having to learn pointers and memory allocation can be another source of difficulty in picking up thte language, but in general useful to know when working with more complicated coding sequences. As a result of this however, it tends to be more confsing than Unity, and has a harder learning curve and most other programming jobs show little use of knowing about pointers and memory allocations.
+		Visiual Scripting--UE4 offers visual scripting, but they are pretty vocal about there visual scripting ment to support the back end that you coded, however you can get away with making a game with just using their visual scripting which is called blueprints. You can find more at https://docs.unrealengine.com/latest/INT/Engine/Blueprints/.
+
+	Unitiy - One of the best engines out there and is easier to pick up. There are a lot more tutorials than Unreal does and they are in general better tutorials out there for the engine as well. However, later on depending on how far you go with development you may run into some limitations as far as optimizing the engine or developing features. Unity is backed by C#, another good language and also one that should be picked up regardless of using the engine or not.
+		Visiual Scripting--Unity offers visual Scripting, but there are multiple versions of it and they are availble on thier asset store with a veriety of prices.
+	
+	CryENGINE is another competing developer engine but CryENGINE uses C++ for the game code, Lua for certain sections of the game logic, and XML for items/vehicles/etc. However C++ should be able to get you around. I am not entirely sure why people tend to choose UE4 over CryENGINE, but they should be able to get the same results as far as graphics. CryENGINE however, does lack a community of developers creating tutorials compared to CryENGINE, with UE4 releasing tutorials videos of their own. Also CryENGINE is aparently harder to use, which is why it most likely is not advised for beginners to use. However CryENGINE is cheaper than UE4, because they don't charge royalties. CryEngine V supports C Sharp.
+		Visual Scripting-- Also Available and free to use
+		For tutorials - https://www.cryengine.com/tutorials
+
+	Amazon Lumberyard is a free AAA game engine deeply integrated with Amazon Web Services(AWS) and Twitch – with full source. They use the same scripting language as CryENGINE (Lua).
+
+	There are other engines to look at, but most don't support VR and are tailored towards specific generes
+
+**For the duration of this documentation I will assume you choose UE4, however I will attempt to general enough that this will be helpful regardless of engine.
+
+After Choosing and engine
+
+	-Get aquianted with the UI by making a tutrial project or one of you own (set a time limit to stay motivated)
+	-

@@ -9,16 +9,14 @@ function Highlight(){
 	var pageheight = window.innerHeight - 46;
 	if (window.pageYOffset < pageheight){
 		$(".highlight").removeClass("highlight");
-		$(".books .about").addClass("highlight");
-		$(".books .link").addClass("highlight");
+<<<<<<< HEAD
+		$(".first-panel").addClass("highlight");
 	}else if(window.pageYOffset < (pageheight + pageheight)){
 		$(".highlight").removeClass("highlight");
-		$(".motivation .about").addClass("highlight");
-		$(".motivation .link").addClass("highlight");
+		$(".second-panel").addClass("highlight");
 	}else if(window.pageYOffset < (pageheight + pageheight + pageheight)){
 		$(".highlight").removeClass("highlight");
-		$(".shit .about").addClass("highlight");
-		$(".shit .link").addClass("highlight");
+		$(".third-panel").addClass("highlight");
 	}
 }
 
@@ -29,4 +27,26 @@ function scroll(){
 	}else if(window.pageYOffset < (pageheight + pageheight)){
 		window.scrollTo(0, pageheight*2);
 	}
+}
+
+$(document).ready(function (){
+	menuSize();
+	$(window).resize(function() {
+		menuSize();
+	});
+});
+
+function menuSize(){
+	var pageWidth = window.innerWidth;
+	if (pageWidth < 788){
+		$(".mini-menubar").addClass("active");
+		$(".menu").addClass("mini-menu");
+	}else if (pageWidth > 787){
+		$(".active").removeClass("active");
+		$(".mini-menu"). removeClass("mini-menu");
+	}
+}
+
+function menuDisplay(){
+	$(".mini-menu").addClass("active");
 }

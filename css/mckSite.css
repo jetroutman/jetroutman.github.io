@@ -50,11 +50,61 @@ a{
 }
 /*Minimized menu*/
 span{
-  min-width: 100px;
-  border-bottom: solid white 1px;
+  background-color: white;
+  display: block;
+  width: 22px;
+  height: 2px;
+}
+span + span{
+  margin-top: 4px;
+}
+.mini-menubar{
+  display: inline-flex;
+  margin: 0;
+  text-align: center;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  min-width: 100%;
+}
+.mini-menubar a{
+  width: 100%;
 }
 button{
-  background-color: transparent;
+  left: -8px;
+  position: fixed;
+  padding: 9px 10px 9px 0;
+  margin-top: 68px;
+  background-color: black;
+  border: 1px solid transparent;
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 100%;
+  -webkit-appearance: button;
+  cursor: pointer;
+  display: none;
+}
+.mini-menu{
+  width: 280px;
+  min-width: initial;
+  display: grid;
+  background-color: #171717;
+  top: 0;
+  bottom: 0;
+  left: -280px;
+  transition: left 0.5s, right .5s;
+}
+.active{
+  left: 0;
+}
+.active button{
+  display: initial;
+}
+.mini-menu a{
+  width: 100%;
+  vertical-align: middle;
+}
+.mini-menu .icon{
+  display: none;
 }
 
 /*Replace hover*/
@@ -95,95 +145,42 @@ button{
   -webkit-transform: rotate(45deg);
 }
 
-/*Where books(body) start at*/
-.books{
+/*The panels and there highlight transitions*/
+.books, .motivation, .shit{
   height: calc(100vh - 45px);
   padding: 0;
+  opacity: .1;
+  transition: opacity 2s ease-out;
+  -moz-transition: opacity 2s ease-out;
+  -webkit-transition: opacity 2s ease-out;
+  -o-transition: opacity 2s ease-out;
 }
+.books .about, .motivation .about, .shit .about{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+}
+.books .link, .motivation .link, .shit .link{
+  color: black;
+  background-color: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+}
+/*For books and stuff
+first panel*/
 .books .about{
   background-color: rgb(47, 18, 79);
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 80%;
-  opacity: .1;
-  transition: opacity 2s ease-out;
-  -moz-transition: opacity 2s ease-out;
-  -webkit-transition: opacity 2s ease-out;
-  -o-transition: opacity 2s ease-out;
 }
-.books .link{
-  color: black;
-  background-color: white;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 20%;
-  opacity: .1;
-  transition: opacity 2s ease-out;
-  -moz-transition: opacity 2s ease-out;
-  -webkit-transition: opacity 2s ease-out;
-  -o-transition: opacity 2s ease-out;
-}
-
 /*for quotes and stuff..anything to provide motivation
 Second section*/
-.motivation{
-  height: calc(100vh - 45px);
-  padding: 0;
-}
 .motivation .about{
   background-color: rgb(204, 153, 0);
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 80%;
-  opacity: .1;
-  transition: opacity 2s ease-out;
-  -moz-transition: opacity 2s ease-out;
-  -webkit-transition: opacity 2s ease-out;
-  -o-transition: opacity 2s ease-out;
 }
-.motivation .link{
-  color: black;
-  background-color: white;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 20%;
-  opacity: .1;
-  transition: opacity 2s ease-out;
-  -moz-transition: opacity 2s ease-out;
-  -webkit-transition: opacity 2s ease-out;
-  -o-transition: opacity 2s ease-out;
-}
-/*funny shit 3rd Section needs warning*/
-.shit{
-  height: calc(100vh - 45px);
-  padding: 0;
-}
+/*funny shit 3rd Section needs warning
+third panel*/
 .shit .about{
   background-color: rgb(47, 18, 79);
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 80%;
-  opacity: .1;
-  transition: opacity 2s ease-out;
-  -moz-transition: opacity 2s ease-out;
-  -webkit-transition: opacity 2s ease-out;
-  -o-transition: opacity 2s ease-out;
-}
-.shit .link{
-  color: black;
-  background-color: white;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 20%;
-  opacity: .1;
-  transition: opacity 2s ease-out;
-  -moz-transition: opacity 2s ease-out;
-  -webkit-transition: opacity 2s ease-out;
-  -o-transition: opacity 2s ease-out;
 }

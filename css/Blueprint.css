@@ -6,6 +6,7 @@ body{
 	font-size: 24px;
 	color: white;
 	overflow-x: hidden;
+<<<<<<< HEAD
 }
 
 /*menu*/
@@ -32,6 +33,101 @@ a, a:hover, a:focus{
 a:hover{
 	background-color: #800000;
 }
+=======
+}
+
+/*menu*/
+.navigation button{
+	display: none;
+}
+.menu-items{
+	display: inline-flex;
+}
+.menu-items a{
+	width: calc(100vw / 6);
+}
+.navigation{
+	z-index: 100;
+	left: 0;
+	padding: 0;
+	display: inline-flex;
+	margin: 0;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	background-color: #171717;
+	min-width: 100%;
+}
+a, a:hover, a:focus{
+	text-decoration: none;
+	color: white;
+}
+a:hover{
+	background-color: #800000;
+}
+.current{
+	text-decoration: none;
+	color: white;
+	background-color: #800000;
+}
+/*Responsive Menu*/
+.mini-body{
+	margin-top: 0;
+}
+.mini-nav{
+	background-color: transparent;
+	position: fixed;
+	width: 280px;
+	top: 0;
+	bottom: 0;
+	min-width: inherit;
+}
+.mini-nav a{
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 280px;
+	display: block;
+}
+.mini-nav button{
+	left: -8px;
+	display: initial;
+	position: absolute;
+    padding: 9px 10px 9px 0;
+    margin-top: 68px;
+    box-shadow: 0 0 30px 0 rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid transparent;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+.mini-nav span{
+	background-color: #800000;
+	display: block;
+    width: 22px;
+    height: 4px;
+}
+.mini-nav span+span{
+	margin-top: 4px;
+}
+.mini-nav .menu-items{
+	transition: left .5s, right .5s;
+	left: -280px;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	background-color: #171717;
+}
+.mini-nav .menu-items{
+	display: block;
+}
+.active .menu-items{
+	left: 0;
+}
+>>>>>>> 1f3892d05ff3a0e016ab105d050cdd03785c3b60
 
 /*Special Header*/
 h3{

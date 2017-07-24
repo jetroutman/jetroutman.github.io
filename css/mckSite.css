@@ -45,12 +45,12 @@ a, a:hover, a:focus{
   background-color: rgb(204, 153, 0);
   border:hidden;
 }
-
 a{
   width: 20vw;
 }
 /*Minimized menu*/
 span{
+<<<<<<< HEAD
   background-color: white;
   display: block;
   width: 22px;

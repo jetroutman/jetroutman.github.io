@@ -1,0 +1,180 @@
+body{
+  background-color: #171717;
+  font-size: 24px;
+  color: white;
+  margin: 0;
+}
+
+p{text-align: center;}
+
+/*about headings*/
+h3{
+  padding-top: 15px;
+  text-align: center;
+}
+/*link headings*/
+h1{
+  text-align: center;
+  margin: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-before: 0;
+}
+
+/*Menu*/
+.menu a:hover{
+  background-color: rgb(204, 153, 0);
+  border:hidden;
+}
+.menu{
+  display: inline-flex;
+  margin: 0;
+  text-align: center;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  min-width: 100%;
+  max-width: 100%;
+}
+a, a:hover, a:focus{
+  text-decoration: none;
+  color: white;
+}
+a{
+  width: 20vw;
+}
+/*Minimized menu*/
+span{
+  background-color: white;
+  display: block;
+  width: 22px;
+  height: 2px;
+}
+span + span{
+  margin-top: 4px;
+}
+.mini-menubar{
+  display: inline-flex;
+  margin: 0;
+  text-align: center;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  min-width: 100%;
+}
+.mini-menubar a{
+  width: 100%;
+}
+button{
+  left: -8px;
+  position: fixed;
+  padding: 9px 10px 9px 0;
+  margin-top: 68px;
+  background-color: black;
+  border: 1px solid transparent;
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 100%;
+  -webkit-appearance: button;
+  cursor: pointer;
+  display: none;
+}
+.mini-menu{
+  width: 280px;
+  min-width: initial;
+  display: grid;
+  background-color: #171717;
+  top: 0;
+  bottom: 0;
+  left: -280px;
+  transition: left 0.5s, right .5s;
+}
+.active{
+  left: 0;
+}
+.active button{
+  display: initial;
+}
+.mini-menu a{
+  width: 100%;
+  vertical-align: middle;
+}
+.mini-menu .icon{
+  display: none;
+}
+
+/*Replace hover*/
+.highlight{
+  opacity: 1 !important;
+}
+
+/* For scroll button */
+.about{ /*Get it to the bottom of it's own div*/
+  display: table;
+}
+.scrollbtn{
+  height: 1px;
+  display: table-row;
+}
+.scrollbtn:hover .arrow{ /*Coloration of arrow and text*/
+  border-color:rgb(204, 153, 0);
+}
+.scrollbtn:hover{
+  cursor: pointer;
+  color: rgb(204, 153, 0);
+}
+.motivation .scrollbtn:hover .arrow{ /*Coloration of arrow and text*/
+  border-color: rgb(47, 18, 79);
+}
+.motivation .scrollbtn:hover{
+  font-weight: 500;
+  color: rgb(47, 18, 79);
+}
+.arrow{ /*Makes the arrow*/
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.down{
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+/*The panels and there highlight transitions*/
+.books, .motivation, .shit{
+  height: calc(100vh - 45px);
+  padding: 0;
+  opacity: .1;
+  transition: opacity 2s ease-out;
+  -moz-transition: opacity 2s ease-out;
+  -webkit-transition: opacity 2s ease-out;
+  -o-transition: opacity 2s ease-out;
+}
+.books .about, .motivation .about, .shit .about{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+}
+.books .link, .motivation .link, .shit .link{
+  color: black;
+  background-color: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+}
+/*For books and stuff
+first panel*/
+.books .about{
+  background-color: rgb(47, 18, 79);
+}
+/*for quotes and stuff..anything to provide motivation
+Second section*/
+.motivation .about{
+  background-color: rgb(204, 153, 0);
+}
+/*funny shit 3rd Section needs warning
+third panel*/
+.shit .about{
+  background-color: rgb(47, 18, 79);
+}

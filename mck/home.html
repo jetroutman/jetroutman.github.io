@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="../pictures/McKIS.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Innovative Studios</title>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.1.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.1.2/respond.min.js"></script>
+    <![endif]-->
+
+  <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/mckSite.css">
+  <script src="../js/jquery-3.1.1.js"></script>
+  <script src="../js/mckSite.js"></script>
+  <script type="../css/bootstrap/js/bootstrap.min.js"></script>
+
+  <style type="text/css">
+    body{
+      margin-top: 45px;
+    }
+  </style>
+
+  <body>
+  <!-- Bar Icon for menu when in smaller state -->
+  <div class="mini-menubar">
+    <a href="../index.html"><img src="../pictures/McKIS.ico" style="width: 45px; height: 45px;"></a>
+    <button onclick="menuDisplay()">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+  </div>
+  <!-- Regular Menu -->
+  <div class="menu">
+    <a href="home.html">McK</a>
+    <a href="books.html">Books</a>
+    <a class="icon" href="../index.html"><img src="../pictures/McKIS.ico" style="width: 45px; height: 45px;"></a>
+    <a href="motivation.html">Motivation</a>
+    <a href="shii.html">Shiii</a>
+  </div>
+
+  <div class="col-xs-12 col-md-12" style="padding: 0;">
+    <div class="books first-panel">
+      <div class="about">
+        <h3>Looking for a good book?</h3>
+        <p><b>Talking about books</b></p>
+        <p>By clicking the link below you can find my suggestions for books reads along with some book reviews</p>
+        <p onclick="scroll()" class="scrollbtn">To Motivation<br>
+          <i class="down arrow"></i>
+        </p>
+      </div>
+      <a href="books.html">
+        <div class="link">
+          <h1>Go to Books</h1>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-md-12" style="padding: 0;">
+    <div class="motivation second-panel">
+      <div class="about">
+        <h3>Just trying to keep y'all sprits up</h3>
+        <p onclick="scroll()" class="scrollbtn">To the Bottom<br>
+          <i class="down arrow"></i>
+        </p>
+      </div>
+      <a href="motivation.html">
+        <div class="link">
+          <h1>Go to Motivation</h1>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-md-12" style="padding: 0;">
+    <div class="shit third-panel">
+      <div class="about">
+        <h3>Some things that I thought were funny</h3>
+      </div>
+      <a href="shii.html">
+        <div class="link">
+          <h1>Go to some shii</h1>
+        </div>
+      </a>
+    </div>
+  </div>
+</body>

@@ -6,34 +6,6 @@ body{
 	font-size: 24px;
 	color: white;
 	overflow-x: hidden;
-<<<<<<< HEAD
-}
-
-/*menu*/
-.navigation a{
-	width: calc(100vw / 6);
-}
-.navigation{
-	z-index: 100;
-	left: 0;
-	padding: 0;
-	display: inline-flex;
-	margin: 0;
-	text-align: center;
-	position: fixed;
-	top: 0;
-	background-color: #171717;
-	min-width: 103%;
-	max-width: 103%;
-}
-a, a:hover, a:focus{
-	text-decoration: none;
-	color: white;
-}
-a:hover{
-	background-color: #800000;
-}
-=======
 }
 
 /*menu*/
@@ -127,7 +99,6 @@ a:hover{
 .active .menu-items{
 	left: 0;
 }
->>>>>>> 1f3892d05ff3a0e016ab105d050cdd03785c3b60
 
 /*Special Header*/
 h3{

@@ -17,18 +17,6 @@ function Highlight(){
 	}else if(window.pageYOffset < (pageheight + pageheight + pageheight)){
 		$(".highlight").removeClass("highlight");
 		$(".third-panel").addClass("highlight");
-=======
-		$(".books .about").addClass("highlight");
-		$(".books .link").addClass("highlight");
-	}else if(window.pageYOffset < (pageheight + pageheight)){
-		$(".highlight").removeClass("highlight");
-		$(".motivation .about").addClass("highlight");
-		$(".motivation .link").addClass("highlight");
-	}else if(window.pageYOffset < (pageheight + pageheight + pageheight)){
-		$(".highlight").removeClass("highlight");
-		$(".shit .about").addClass("highlight");
-		$(".shit .link").addClass("highlight");
->>>>>>> 1f3892d05ff3a0e016ab105d050cdd03785c3b60
 	}
 }
 
@@ -39,7 +27,6 @@ function scroll(){
 	}else if(window.pageYOffset < (pageheight + pageheight)){
 		window.scrollTo(0, pageheight*2);
 	}
-<<<<<<< HEAD
 }
 
 $(document).ready(function (){
@@ -62,6 +49,4 @@ function menuSize(){
 
 function menuDisplay(){
 	$(".mini-menu").addClass("active");
-=======
->>>>>>> 1f3892d05ff3a0e016ab105d050cdd03785c3b60
 }

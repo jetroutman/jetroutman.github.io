@@ -178,3 +178,25 @@ h1 {
 	padding: 15px;
 	display:inline-block;
 }
+
+/*Resume Stuff*/
+h2{
+	background-color: rgba(255, 255, 255, 0.5);
+	padding:28px;
+	font-size: 24px;
+	color:#800000;
+	text-align: center;
+	font-family: sans-serif;
+	margin-bottom: 0;
+}
+.education{
+}
+.left, ul{
+	margin-left: 15px;
+	float: left;
+	text-align: left;
+}
+.right{
+	margin-right: 15px;
+	text-align: right;
+}

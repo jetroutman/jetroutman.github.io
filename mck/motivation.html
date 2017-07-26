@@ -15,21 +15,15 @@
       <script src="https://oss.maxcdn.com/respond/1.1.2/respond.min.js"></script>
     <![endif]-->
 
-  <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="../css/mckSite.css">
-  <script src="../js/jquery-3.1.1.js"></script>
-  <script src="../js/mckSite.js"></script>
-
-  <style type="text/css">
-    body{
-      margin-top: 45px;
-    }
-  </style>
+    <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/mckSite.css">
+    <script src="../js/jquery-3.1.1.js"></script>
+    <script src="../js/mckSite.js"></script>
   </head>
 
   <body>
     <!-- Bar Icon for menu when in smaller state -->
-    <div class="mini-menubar">
+    <div id="nav" class="mini-menubar">
       <a href="../index.html"><img src="../pictures/McKIS.ico" style="width: 45px; height: 45px;"></a>
       <button onclick="menuDisplay()">
         <span class="icon-bar"></span>
@@ -47,30 +41,28 @@
     </div>
 
     <div class="col-xs-12 col-md-12" style="padding: 0;">
-      <div class="reviews first-panel">
-        <div class="link">
-          <h1>Quotes</h1>
+      <div class="slideshow-container">
+        <div class="mySlides1 Slides fade">
+          <img src="../pictures/motivation/img1.jpg">
+        </div>
+
+        <div class="mySlides2 Slides fade">
+          <img src="../pictures/motivation/img1.jpg">
+        </div>
+
+        <div class="mySlides3 Slides fade">
+          <img src="../pictures/motivation/img1.jpg">
+        </div>
+
+        <div class="mySlides4 Slides fade quote">
+          <img src="../pictures/motivation/background.jpg">
+          <p>All Common Sense isn't Common Practice</p>
         </div>
       </div>
     </div>
-    <div class="col-xs-12 col-md-12" style="padding: 0;">
-      <div class="suggestions second-panel">
-        <div class="link">
-          <h1>Suggestions</h1>
-        </div>
-      </div>
-    </div>
-    <audio id="music" controls="controls">
-      <source src="music/onlyidreamwithyou1.ogg" type="audio/ogg" />
-      <source src="music/onlyidreamwithyou1.mp3" type="audio/mpeg" />
+    <audio autoplay controls>
+      <source src="../music/Kendrick_Lamar_s_Interlude_Feat_.ogg" type="audio/ogg">
+    Your browser does not support the audio element.
     </audio>
-    <button id="pButton" class="play" onclick="playAudio()"></button>
-    <div id="audioplayer">
-      <button id="pButton" class="play" onclick="play()"></button>
-      <div id="timeline">
-        <div id="playhead"></div>
-      </div>
-    </div>
-    
   </body>
 </html>

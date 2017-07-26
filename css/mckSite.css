@@ -191,29 +191,48 @@ third panel*/
 }
 
 /*Motivation Page*/
-/*Music Player Styling*/
-#pButton{
-  height:60px;
-  width: 60px;
-  border: none;
-  background-size: 50% 50%;
-  background-position: center;
+/*Slide Show*/
+.Slides{
+  margin-top: 45px;
+  width: 100vw;
+  height: auto;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
-.play{background: url('../images/play.png') no-repeat;}
-.pause{background: url('../images/pause.png') no-repeat;}
-#timeline{
-  width: 400px;
-  height: 20px;
-  background: #4200f7;
-  margin-top: 20px;
-  float: left;
-  border-radius: 15px;
+.Slides img{
+  width: 100%;
+  height: auto;
+  max-height: 100vh;
+  max-width: 100vw;
+}
+.quote p{
+  width: 100%;
+  top: 0;
+  position: absolute;
+  margin-top: 65px;
+  font-family: "Trajan", Georgia, Serif;
+  font-size: xx-large;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  opacity: 0;
+}
+@-webkit-keyframes fade {
+  from {opacity: 0}
+  to {opacity: 1}
 }
 
-#playhead{
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  margin-top: 1px;
-  background: rgba(0, 255, 196, 0.82);
+@keyframes fade {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+/*Music Player Styling*/
+audio{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
 }

@@ -19,11 +19,13 @@
   <link rel="stylesheet" type="text/css" href="../css/mckSite.css">
   <script src="../js/jquery-3.1.1.js"></script>
   <script src="../js/mckSite.js"></script>
+
   <style type="text/css">
     body{
       margin-top: 45px;
     }
   </style>
+  </head>
 
   <body>
   <!-- Bar Icon for menu when in smaller state -->
@@ -46,35 +48,35 @@
 
   <div class="col-xs-12 col-md-12" style="padding: 0;">
     <div class="books first-panel">
-      <div class="about">
-        <h3>Looking for a good book?</h3>
-        <p><b>Talking about books</b></p>
-        <p>By clicking the link below you can find my suggestions for books reads along with some book reviews</p>
-        <p onclick="scroll()" class="scrollbtn">To Motivation<br>
+      <a href="books.html">
+        <div class="about">
+          <h3>Looking for a good book?</h3>
+          <p><b>Talking about books</b></p>
+          <p>Here you can find my suggestions for books, as well as some book reviews</p>
+        </div>
+      </a>
+      <div class="link">
+        <h3>Looking for Motivation?</h3>
+        <p onclick="scroll()" class="scrollbtn"><b>To Motivation</b><br>
           <i class="down arrow"></i>
         </p>
       </div>
-      <a href="books.html">
-        <div class="link">
-          <h1>Go to Books</h1>
-        </div>
-      </a>
     </div>
   </div>
 
   <div class="col-xs-12 col-md-12" style="padding: 0;">
     <div class="motivation second-panel">
-      <div class="about">
-        <h3>Just trying to keep y'all sprits up</h3>
-        <p onclick="scroll()" class="scrollbtn">To the Bottom<br>
+      <a href="motivation.html">
+        <div class="about">
+          <h3>Just trying to keep y'all sprits up</h3>
+        </div>
+      </a>
+      <div class="link">
+        <h3>Here to See Some Shii</h3>
+        <p onclick="scroll()" class="scrollbtn"><b>To the Bottom</b><br>
           <i class="down arrow"></i>
         </p>
       </div>
-      <a href="motivation.html">
-        <div class="link">
-          <h1>Go to Motivation</h1>
-        </div>
-      </a>
     </div>
   </div>
 
@@ -82,10 +84,12 @@
     <div class="shit third-panel">
       <div class="about">
         <h3>Some things that I thought were funny</h3>
+        <!-- Should add this checkbox at some point 
+        <br><br><input type="checkbox" name="agreeCheckbox"> I have agreed that I am okay with possible explicit language -->
       </div>
-      <a href="shii.html">
+      <a id="mylink" href="shii.html">
         <div class="link">
-          <h1>Go to some shii</h1>
+          <h3 class="warning">Warning: There may be things here you may not agree with or find explicit but click here if you're cool with that</h3>
         </div>
       </a>
     </div>

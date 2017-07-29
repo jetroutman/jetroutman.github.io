@@ -16,7 +16,7 @@ body{
 	display: inline-flex;
 }
 .menu-items a{
-	width: calc(100vw / 6);
+	width: calc(100vw / 7);
 }
 .navigation{
 	z-index: 100;
@@ -62,13 +62,13 @@ a:hover{
 	display: block;
 }
 .mini-nav button{
-	left: -8px;
+	left: -1px;
 	display: initial;
 	position: absolute;
     padding: 9px 10px 9px 0;
     margin-top: 68px;
     box-shadow: 0 0 30px 0 rgb(255, 255, 255);
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid transparent;
     border-top-right-radius: 100%;
     border-bottom-right-radius: 100%;
@@ -199,4 +199,13 @@ h2{
 .right{
 	margin-right: 15px;
 	text-align: right;
+}
+@media(max-width: 680px){
+	.left{
+		width: 100%;
+	}
+	.right{
+		width: 100%;
+		padding-right: 15px;
+	}
 }

@@ -15,21 +15,15 @@
       <script src="https://oss.maxcdn.com/respond/1.1.2/respond.min.js"></script>
     <![endif]-->
 
-  <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="../css/mckSite.css">
-  <script src="../js/jquery-3.1.1.js"></script>
-  <script src="../js/mckSite.js"></script>
-
-  <style type="text/css">
-    body{
-      margin-top: 45px;
-    }
-  </style>
+    <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/mckSite.css">
+    <script src="../js/jquery-3.1.1.js"></script>
+    <script src="../js/mckSite.js"></script>
   </head>
 
   <body>
     <!-- Bar Icon for menu when in smaller state -->
-    <div class="mini-menubar">
+    <div id="nav" class="mini-menubar">
       <a href="../index.html"><img src="../pictures/McKIS.ico" style="width: 45px; height: 45px;"></a>
       <button onclick="menuDisplay()">
         <span class="icon-bar"></span>
@@ -47,18 +41,31 @@
     </div>
 
     <div class="col-xs-12 col-md-12" style="padding: 0;">
-      <div class="reviews first-panel">
-        <div class="link">
-          <h1>Quotes</h1>
+      <div>
+        <div class="quote motivation-container">
+          <p>All Common Sense isn't Common Practice <br>- Stephen Covey</p>
+        </div>
+
+        <div>
+          <P>Hopefully you are familiar with <a class="ted" href="https://www.ted.com/">TED Talk</a> but there's a lot of good stuff here</P>
+          <iframe style="width: 100vw; height: 56vw;" src="https://www.youtube.com/embed/7sxpKhIbr0E" frameborder="0" allowfullscreen></iframe>
+          <p>Here's Another good source of information and motivation at <a class="geek" href="https://collegeinfogeek.com/">College Info Geek</a></p>
+          <iframe style="width: 100vw; height: 56vw;" src="https://www.youtube.com/embed/OO2ajzXu-Wg" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="email motivation-container">
+          <p>Email <a href="mailto:jettroutman@gmail.com?Subject=Motivation%20Suggestions" target="_top">Jacob</a> suggestions for things that keep or get you motivated at: 
+            <a href="mailto:jettroutman@gmail.com?Subject=Motivation%20Suggestions" target="_top">jettroutman@gmail.com</a>
+          </p>
+          <p>Also here's a track you can listen to, to keep you motivated 
+            <i class="down arrow" style="border-color: white;"></i>
+          </p>
         </div>
       </div>
     </div>
-    <div class="col-xs-12 col-md-12" style="padding: 0;">
-      <div class="suggestions second-panel">
-        <div class="link">
-          <h1>Suggestions</h1>
-        </div>
-      </div>
-    </div>
+    <audio controls>
+      <source src="../music/Kendrick_Lamar_s_Interlude_Feat_.ogg" type="audio/ogg">
+    Your browser does not support the audio element.
+    </audio>
   </body>
 </html>

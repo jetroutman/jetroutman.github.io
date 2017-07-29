@@ -29,7 +29,7 @@
 
   <body>
     <!-- Bar Icon for menu when in smaller state -->
-    <div class="mini-menubar">
+    <div id="nav" class="mini-menubar">
       <a href="../index.html"><img src="../pictures/McKIS.ico" style="width: 45px; height: 45px;"></a>
       <button onclick="menuDisplay()">
         <span class="icon-bar"></span>
@@ -48,16 +48,65 @@
 
     <div class="col-xs-12 col-md-12" style="padding: 0;">
       <div class="reviews first-panel">
-        <div class="link">
-          <h1>Book Reviews</h1>
+        <div class="Reviews col-12">
+          <h1>Book Review of the Week</h1>
+          <div>
+            <img class="reviewImg col-6" align="left" src="../pictures/Books/managing_oneself.jpg">
+            <p class="reviewText">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+
+            <br>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+
+            <br>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+
+            <br>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+
+            <br>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-xs-12 col-md-12" style="padding: 0;">
-      <div class="suggestions second-panel">
-        <div class="link">
-          <h1>Suggestions</h1>
-        </div>
+      <div class="col-12 suggestions second-panel">
+        <h1>Suggestions</h1>
+        <h2>Practical Books</h2>
+          <div id="booklist">
+            <a href="https://smile.amazon.com/Managing-Oneself-Peter-F-Drucker/dp/163369304X/ref=sr_1_2?ie=UTF8&qid=1501281968&sr=8-2&keywords=managing+oneself">
+              <img class="lazyload" src="../pictures/Books/Managing_Oneself.jpg" alt="Managing Oneself" width="120" height="160" />
+            </a>
+          </div>
+        <h2>History and Biographies</h2>
+          <div id="booklist">
+            <a href="https://smile.amazon.com/dp/143914995X/_encoding=UTF8?coliid=I2SKPSNILSWF3D&colid=1JPGXGZEFDT3L">
+              <img class="lazyload" src="../pictures/Books/Lesson_of_History.jpg" alt="Lesson of History" width="120" height="160" />
+            </a>
+          </div>
+        <h2>Math and Sciences</h2>
+          <div id="booklist">
+            <a href="https://smile.amazon.com/gp/product/0990582906/ref=oh_aui_detailpage_o05_s00?ie=UTF8&psc=1">
+              <img class="lazyload" src="../pictures/Books/Game_Programming_Patterns.jpg" alt="Game Programming Patterns" width="120" height="160" />
+            </a>
+          </div>
+        <h2>Philosophy</h2>
+          <div id="booklist">
+            <a href="https://smile.amazon.com/dp/0393304515/_encoding=UTF8?coliid=I25VAB0ZLD75N7&colid=1JPGXGZEFDT3L">
+              <img class="lazyload" src="../pictures/Books/Civilization_and_Its_Discontents.jpg" alt="Civilization and Its Discontents" width="120" height="160" />
+            </a>
+          </div>
+        <h2>Upcoming Reads</h2>
+          <div id="booklist">
+            <a href="https://smile.amazon.com/Energy-Bus-Rules-Fuel-Positive/dp/0470100281/ref=sr_1_1?s=books&ie=UTF8&qid=1501283950&sr=1-1&keywords=the+energy+bus">
+              <img class="lazyload" src="../pictures/Books/The_Energy_Bus.jpg" alt="The Energy Bus" width="120" height="160" />
+            </a>
+          </div>
+        <h2>Upcoming Book Reviews</h2>
+          <div id="booklist">
+            <a href="https://smile.amazon.com/dp/0446548162/_encoding=UTF8?coliid=IDAQ8L7XD0WU4&colid=1JPGXGZEFDT3L">
+              <img class="lazyload" src="../pictures/Books/When_I_Stop_Talking,_Youll_Know_Im_Dead.jpg" alt="When I Stop Talking, You'll Know I'm Dead" width="120" height="160" />
+            </a>
+          </div>
+      </div>
+      <div class="email book-container">
+        <p>Email <a href="mailto:jettroutman@gmail.com?Subject=Book%20Suggestions" target="_top">Jacob</a> suggestions for things that keep or get you motivated at: 
+          <a href="mailto:jettroutman@gmail.com?Subject=Book%20Suggestions" target="_top">jettroutman@gmail.com</a>
+        </p>
       </div>
     </div>
   </body>

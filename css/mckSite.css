@@ -50,10 +50,10 @@ a{
 }
 /*Minimized menu*/
 span{
-  background-color: white;
+  background-color: rgb(47, 18, 79);
   display: block;
   width: 22px;
-  height: 2px;
+  height: 4px;
 }
 span + span{
   margin-top: 4px;
@@ -71,11 +71,12 @@ span + span{
   width: 100%;
 }
 button{
-  left: -8px;
+  left: -1px;
   position: fixed;
   padding: 9px 10px 9px 0;
-  margin-top: 68px;
-  background-color: black;
+  margin-top: 120px;
+  box-shadow: 0 0 30px 0 rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid transparent;
   border-top-right-radius: 100%;
   border-bottom-right-radius: 100%;
@@ -84,13 +85,13 @@ button{
   display: none;
 }
 .mini-menu{
-  width: 280px;
+  width: 140px;
   min-width: initial;
   display: grid;
   background-color: #171717;
   top: 0;
   bottom: 0;
-  left: -280px;
+  left: -140px;
   transition: left 0.5s, right .5s;
 }
 .active{
@@ -117,8 +118,10 @@ button{
   display: table;
 }
 .scrollbtn{
-  height: 1px;
-  display: table-row;
+  margin-bottom: 0px;
+  bottom: 0;
+  position: absolute;
+  width: inherit;
 }
 .scrollbtn:hover .arrow{ /*Coloration of arrow and text*/
   border-color:rgb(204, 153, 0);
@@ -135,7 +138,7 @@ button{
   color: rgb(47, 18, 79);
 }
 .arrow{ /*Makes the arrow*/
-  border: solid white;
+  border: solid black;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
@@ -176,11 +179,53 @@ first panel*/
 }
 /*for quotes and stuff..anything to provide motivation
 Second section*/
-.motivation .about{
+.motivation .about, .motivation-container{
   background-color: rgb(204, 153, 0);
 }
 /*funny shit 3rd Section needs warning
 third panel*/
-.shit .about{
+.shit .about .shit-container{
   background-color: rgb(47, 18, 79);
+}
+.warning{
+  color: red;
+}
+
+/*Books*/
+.reviews{
+  overflow: auto;
+}
+#booklist{
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+
+/*Motivation Page*/
+.quote p{
+  width: 100%;
+  top: 0;
+  margin-top: 65px;
+  font-family: "Trajan", Georgia, Serif;
+  font-size: xx-large;
+}
+.email{
+  margin-bottom: 32px;
+}
+.ted{
+  color: red;
+}
+.geek{
+  color: orange;
+}
+/*Music Player Styling*/
+audio{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+/*CSS for SHII page*/
+video{
+  width: 100vw;
 }

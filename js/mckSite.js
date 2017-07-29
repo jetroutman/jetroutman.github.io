@@ -55,20 +55,3 @@ function menuDisplay(){
 	$(".mini-menu").addClass("active");
 }
 
-(function(){
-    var imgLen = document.getElementById('slideshow-container');
-    var imgdiv = imgLen.getElementsByTagName('div');
-    var counter = 1;
-
-    if(counter <= imgdiv.length){
-        setInterval(function(){
-            imgdiv[0].src = imgdiv[counter].src;
-            console.log(imgdiv[counter].src);
-            counter++;
-
-            if(counter === imgdiv.length){
-                counter = 1;
-            }
-        },4000);
-    }
-})();

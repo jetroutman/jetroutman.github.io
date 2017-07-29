@@ -16,7 +16,7 @@ body{
 	display: inline-flex;
 }
 .menu-items a{
-	width: calc(100vw / 6);
+	width: calc(100vw / 7);
 }
 .navigation{
 	z-index: 100;
@@ -199,4 +199,13 @@ h2{
 .right{
 	margin-right: 15px;
 	text-align: right;
+}
+@media(max-width: 680px){
+	.left{
+		width: 100%;
+	}
+	.right{
+		width: 100%;
+		padding-right: 15px;
+	}
 }

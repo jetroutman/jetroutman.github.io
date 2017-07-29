@@ -50,10 +50,10 @@ a{
 }
 /*Minimized menu*/
 span{
-  background-color: white;
+  background-color: rgb(47, 18, 79);
   display: block;
   width: 22px;
-  height: 2px;
+  height: 4px;
 }
 span + span{
   margin-top: 4px;
@@ -75,7 +75,8 @@ button{
   position: fixed;
   padding: 9px 10px 9px 0;
   margin-top: 120px;
-  background-color: black;
+  box-shadow: 0 0 30px 0 rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid transparent;
   border-top-right-radius: 100%;
   border-bottom-right-radius: 100%;

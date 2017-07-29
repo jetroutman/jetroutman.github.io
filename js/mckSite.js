@@ -54,4 +54,3 @@ function menuSize(){
 function menuDisplay(){
 	$(".mini-menu").addClass("active");
 }
-

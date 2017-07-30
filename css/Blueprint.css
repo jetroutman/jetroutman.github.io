@@ -28,7 +28,7 @@ body{
 	position: fixed;
 	top: 0;
 	background-color: #171717;
-	min-width: 100%;
+	width: auto;
 }
 a, a:hover, a:focus{
 	text-decoration: none;
@@ -208,4 +208,13 @@ h2{
 		width: 100%;
 		padding-right: 15px;
 	}
+}
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.container .row{
+    margin-left: -15px;
+    margin-right: -15px;
 }

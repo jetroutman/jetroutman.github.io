@@ -3,9 +3,13 @@ body{
   font-size: 24px;
   color: white;
   margin: 0;
+  margin-top: 45px;
 }
 
-p{text-align: center;}
+p{
+  text-align: center;
+  padding: 0 33px 0 33px;
+}
 
 /*about headings*/
 h3{
@@ -205,12 +209,11 @@ third panel*/
 .quote p{
   width: 100%;
   top: 0;
-  margin-top: 65px;
   font-family: "Trajan", Georgia, Serif;
-  font-size: xx-large;
+  font-size: x-large;
 }
 .email{
-  margin-bottom: 32px;
+  margin-bottom: 48px;
 }
 .ted{
   color: red;

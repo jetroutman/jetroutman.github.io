@@ -238,3 +238,7 @@ audio{
 video{
   width: 100vw;
 }
+
+.social a{
+  width: 100%;
+}

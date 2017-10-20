@@ -230,7 +230,7 @@ third panel*/
 /*Music Player Styling*/
 audio{
   width: 100%;
-  position: fixed;
+  zposition: fixed;
   bottom: 0;
 }
 

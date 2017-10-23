@@ -21,7 +21,7 @@ function Highlight(){
 
 function scroll(){
 	var pageheight = window.innerHeight - 45;
-	if (window.pageYOffset < pageheight){
+	if (window.pageYOffset < pageheight - 1){
 		window.scrollTo(0, pageheight);
 	}else if(window.pageYOffset < (pageheight + pageheight)){
 		window.scrollTo(0, pageheight*2);

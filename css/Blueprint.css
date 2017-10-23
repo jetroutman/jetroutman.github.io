@@ -226,3 +226,13 @@ h2{
   overflow-x: scroll;
   white-space: nowrap;
 }
+
+.email a:hover{
+	background-color: transparent;
+}
+
+audio{
+  width: 100%;
+  zposition: fixed;
+  bottom: 0;
+}

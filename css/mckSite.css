@@ -153,8 +153,17 @@ button{
 }
 
 /*The panels and there highlight transitions*/
-.books, .motivation, .shit{
+.books, .motivation{
   height: calc(100vh - 45px);
+  padding: 0;
+  opacity: .1;
+  transition: opacity 2s ease-out;
+  -moz-transition: opacity 2s ease-out;
+  -webkit-transition: opacity 2s ease-out;
+  -o-transition: opacity 2s ease-out;
+}
+.shit{
+  height: 100vh;
   padding: 0;
   opacity: .1;
   transition: opacity 2s ease-out;

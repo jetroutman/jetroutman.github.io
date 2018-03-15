@@ -43,7 +43,7 @@
     <a href="books.html">Books</a>
     <a class="icon" href="../index.html"><img src="../pictures/McKIS.ico" style="width: 45px; height: 45px;"></a>
     <a href="motivation.html">Motivation</a>
-    <a href="shii.html">Shiii</a>
+    <a href="social.html">Social</a>
   </div>
 
   <div class="col-xs-12 col-md-12" style="padding: 0;">
@@ -55,9 +55,9 @@
           <p>Here you can find my suggestions for books, as well as some book reviews</p>
         </div>
       </a>
-      <div onclick="scroll()" class="link">
+      <div id="scroll1" class="link">
         <h3>Looking for Motivation?</h3>
-        <p class="scrollbtn"><b>Scroll To Motivation</b><br>
+        <p class="scrollbtn"><b>Click Here To Scroll To Motivation</b><br>
           <i class="down arrow"></i>
         </p>
       </div>
@@ -68,12 +68,12 @@
     <div class="motivation second-panel">
       <a href="motivation.html">
         <div class="about">
-          <h3>Just trying to keep y'all sprits up</h3>
+          <h3 style="padding-top: 30vh; font-size: xx-large;">Just trying to keep y'all sprits up</h3>
         </div>
       </a>
-      <div onclick="scroll()" class="link">
-        <h3>Here to See Some Shii</h3>
-        <p class="scrollbtn"><b>Scroll To The Bottom</b><br>
+      <div id="scroll2" class="link">
+        <h3>Here's my Social</h3>
+        <p class="scrollbtn"><b>Click Here To Scroll To The Bottom</b><br>
           <i class="down arrow"></i>
         </p>
       </div>
@@ -83,15 +83,22 @@
   <div class="col-xs-12 col-md-12" style="padding: 0;">
     <div class="shit third-panel">
       <div class="about">
-        <h3>Some things that I thought were funny</h3>
-        <p class="warning">Warning: There may be things here you may not agree with or find explicit but click the white space below if you're cool with that.</p>
-        <!-- Should add this checkbox at some point 
-        <br><br><input type="checkbox" name="agreeCheckbox"> I have agreed that I am okay with possible explicit language -->
-      </div>
-      <a id="mylink" href="shii.html">
-        <div class="link">
+        <h3 style="padding-top: 64px;">Some things that I thought were funny</h3>
+        <p class="warning">Warning: there may be things on my social media that you may not agree with and everything should not be taken to heart. However, if you are of the faint of heart it may be best that you don't follow me on social media(or at least not on snapchat).</p>
+        <div class="row">
+          <center class="col-sm-4 col-md-4 social"><a href="https://www.snapchat.com/add/j_tr0"><img class="lazyload" src="../pictures/Social/Snapcode.png" alt="Snapchat" width="200" height="200" /></a></center>
+          <center class="col-sm-4 col-md-4 social"><a href="https://www.instagram.com/j_tro1/"><img class="lazyload" src="../pictures/Social/Insta.png" alt="Instagram" width="200" height="200" /></a></center>
+          <center class="col-sm-4 col-md-4 social"><a href="https://www.facebook.com/jacob.troutman.31"><img class="lazyload" src="../pictures/Social/Facebook.png" alt="Facebook" width="200" height="200" /></a></center>
         </div>
-      </a>
+      </div>
     </div>
   </div>
 </body>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $("#scroll1, #scroll2").click(function() {
+      scroll();
+    });
+  });
+</script>

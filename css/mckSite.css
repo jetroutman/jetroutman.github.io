@@ -54,7 +54,7 @@ a{
 }
 /*Minimized menu*/
 span{
-  background-color: rgb(47, 18, 79);
+  background-color: rgb(100, 32, 181);
   display: block;
   width: 22px;
   height: 4px;
@@ -89,13 +89,13 @@ button{
   display: none;
 }
 .mini-menu{
-  width: 140px;
+  width: 280px;
   min-width: initial;
   display: grid;
   background-color: #171717;
   top: 0;
   bottom: 0;
-  left: -140px;
+  left: -280px;
   transition: left 0.5s, right .5s;
 }
 .active{
@@ -135,11 +135,11 @@ button{
   color: rgb(204, 153, 0);
 }
 .motivation .scrollbtn:hover .arrow{ /*Coloration of arrow and text*/
-  border-color: rgb(47, 18, 79);
+  border-color: rgb(100, 32, 181);
 }
 .motivation .scrollbtn:hover{
   font-weight: 500;
-  color: rgb(47, 18, 79);
+  color: rgb(100, 32, 181);
 }
 .arrow{ /*Makes the arrow*/
   border: solid black;
@@ -196,7 +196,7 @@ button{
 /*For books and stuff
 first panel*/
 .books .about{
-  background-color: rgb(47, 18, 79);
+  background-color: rgb(100, 32, 181);
 }
 /*for quotes and stuff..anything to provide motivation
 Second section*/
@@ -206,7 +206,7 @@ Second section*/
 /*funny shit 3rd Section needs warning
 third panel*/
 .shit .about .shit-container{
-  background-color: rgb(47, 18, 79);
+  background-color: rgb(100, 32, 181);
 }
 .warning{
   color: red;

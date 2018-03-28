@@ -7,7 +7,12 @@ body{
 	color: white;
 	overflow-x: hidden;
 }
+p{
+	font-size: 16px;
+	line-height: 1.75em;
+}
 
+/*Home Page*/
 /*menu*/
 .navigation button{
 	display: none;
@@ -20,7 +25,6 @@ body{
 }
 .navigation{
 	z-index: 100;
-	left: 0;
 	padding: 0;
 	display: inline-flex;
 	margin: 0;
@@ -35,24 +39,26 @@ a, a:hover, a:focus{
 	color: white;
 }
 a:hover{
-	background-color: #800000;
+	background-color: rgb(251, 26, 37);
 }
 .current{
 	text-decoration: none;
 	color: white;
-	background-color: #800000;
+	background-color: rgb(251, 26, 37);
 }
+
 /*Responsive Menu*/
 .mini-body{
 	margin-top: 0;
 }
 .mini-nav{
-	background-color: transparent;
+	transition: left .5s, right .5s;
 	position: fixed;
 	width: 280px;
 	top: 0;
 	bottom: 0;
 	min-width: inherit;
+	left: -280px;
 }
 .mini-nav a{
 	top: 0;
@@ -60,9 +66,19 @@ a:hover{
 	left: 0;
 	width: 280px;
 	display: block;
+	height: calc(100vh/7);
+	text-align: center;
 }
+.mini-nav a:before {
+  content: '';
+/*   content: '';
+  margin-left: -0.25em; */
+  display: inline-block;
+  height: 100%; 
+  vertical-align: middle;
+ }
 .mini-nav button{
-	left: -1px;
+	left: 280px;
 	display: initial;
 	position: absolute;
     padding: 9px 10px 9px 0;
@@ -76,7 +92,7 @@ a:hover{
     cursor: pointer;
 }
 .mini-nav span{
-	background-color: #800000;
+	background-color: rgb(251, 26, 37);
 	display: block;
     width: 22px;
     height: 4px;
@@ -84,38 +100,31 @@ a:hover{
 .mini-nav span+span{
 	margin-top: 4px;
 }
-.mini-nav .menu-items{
-	transition: left .5s, right .5s;
-	left: -280px;
-	width: 100%;
+.active{
+	left: 0;
 	top: 0;
 	bottom: 0;
-	position: absolute;
-	background-color: #171717;
 }
 .mini-nav .menu-items{
 	display: block;
 }
-.active .menu-items{
-	left: 0;
-}
 
 /*Special Header*/
 h3{
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: white;
 	padding:28px;
 	font-size: 24px;
-	color:#800000;
+	color:rgb(251, 26, 37);
 	text-align: center;
 	font-family: sans-serif;
 }
 .header{
 	margin: 0;
 	min-height: 100px;
-	background-color: #800000;
+	background-color: rgb(251, 26, 37);
 }
 h1 {
-	background-color:#800000;
+	background-color:rgb(251, 26, 37);
 	padding: 25px;
 	font-size: 30px;
 	color: white;
@@ -132,39 +141,133 @@ h1 {
 	max-height: 100vh;
 	max-width: 100vw;
 }
-.portfolio a{
-	background-color: rgba(255, 255, 255, 0.5);
-	color:#800000;
-	padding: 25px;
-	font-size: 30px;
-	font-family: sans-serif;
-	display: block;
-	text-align: center;
-}
-.portfolio a:hover{
-	color: white;
-}
 .portfolio p{
 	text-align: center;
 }
 
-/*Other pages styles*/
-.csi, .games, .music, .future{
-
+/*Story*/
+.what{
+	background-color: rgb(251, 26, 37);
+	background-image: url("../pictures/backgrounds/What.svg");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 48px;
+	display: inline-flex;
+	min-height: 100vh;
 }
-.csi a:hover, .games a:hover, .music a:hover, .future a:hover{
+.title-left{
+	text-align: center;
+	width: 50%;
+}
+.content-padding{
+	padding: 48px;
+}
+.content-right{
+	background-color: black;
+	position: relative;
+	width: 50%;
+}
+.bold-content{
+	font-weight: bold;
+	font-family: sans-serif;
+	margin-bottom: 1.6em;
+}
+.what ul{
+	font-size: 16px;
+	font-family: sans-serif;
+}
+.column-2{
+	display: inline-block;
+}
+.column-2 p{
+	margin-bottom: 1em;
+}
+@media(max-width: 787px){
+  .title-left{
+    width: 100%;
+    background-color: rgb(251, 26, 37);
+    background-image: url("../pictures/backgrounds/What.svg");
+	background-repeat: no-repeat;
+	background-position: 48px;
+	height: 50vh;
+  }
+  .content-right{
+  	width:100%;
+  }
+  .what{
+  	display: block;
+  }
+}
+
+/*Links to other pages*/
+.resume-button{
+   border: 1px solid #ffffff;
+   background: #ad0009;
+   background: -webkit-gradient(linear, left top, left bottom, from(#fb1a25), to(#ad0009));
+   background: -webkit-linear-gradient(top, #fb1a25, #ad0009);
+   background: -moz-linear-gradient(top, #fb1a25, #ad0009);
+   background: -ms-linear-gradient(top, #fb1a25, #ad0009);
+   background: -o-linear-gradient(top, #fb1a25, #ad0009);
+   background-image: -ms-linear-gradient(top, #fb1a25 0%, #ad0009 100%);
+   padding: 60px 60px;
+   -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+   border-radius: 6px;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   text-shadow: #ad0009 0 1px 0;
+   color: #ffffff;
+   font-size: 14px;
+   font-family: helvetica, serif;
+   text-decoration: none;
+   vertical-align: middle;
+}
+.resume-button:hover {
+   border: 1px solid #0a3c59;
+   text-shadow: #1e4158 0 1px 0;
+   background: #ad0009;
+   background: -webkit-gradient(linear, left top, left bottom, from(#fb1a25), to(#ad0009));
+   background: -webkit-linear-gradient(top, #fb1a25, #ad0009);
+   background: -moz-linear-gradient(top, #fb1a25, #ad0009);
+   background: -ms-linear-gradient(top, #fb1a25, #ad0009);
+   background: -o-linear-gradient(top, #fb1a25, #ad0009);
+   background-image: -ms-linear-gradient(top, #fb1a25 0%, #ad0009 100%);
+   color: #fff;
+}
+.resume-button:active {
+   text-shadow: #1e4158 0 1px 0;
+   border: 1px solid #0a3c59;
+   background: #fb1a25;
+   background: -webkit-gradient(linear, left top, left bottom, from(#fb1a25), to(#fb1a25));
+   background: -webkit-linear-gradient(top, #ad0009, #fb1a25);
+   background: -moz-linear-gradient(top, #ad0009, #fb1a25);
+   background: -ms-linear-gradient(top, #ad0009, #fb1a25);
+   background: -o-linear-gradient(top, #ad0009, #fb1a25);
+   background-image: -ms-linear-gradient(top, #ad0009 0%, #fb1a25 100%);
+   color: #fff;
+}
+.resume{
+	vertical-align: center;
+	text-align: center;
+	margin-bottom: 12px;
+}
+ .resume a{
+ 	font-size: 36px;
+ 	height: 100%;
+ 	width: 100%;
+ 	display: block;
+ }
+.csi a:hover, .future a:hover{
 	background-color: #171717;
 }
-.csi a, .games a, .music a, .future a{
+.csi a, .future a{
 	background-color: rgba(255, 255, 255, 0.5);
 	font-size: 24px;
-	color:#800000;
+	color:rgb(251, 26, 37);
 	text-align: center;
 	font-family: sans-serif;
 	display: block;
-}
-.future p{
-	text-align: center;
 }
 
 /*Spherical Images*/
@@ -182,12 +285,12 @@ h1 {
 /*Resume Stuff*/
 h2{
 	background-color: rgba(255, 255, 255, 0.5);
-	padding:28px;
-	font-size: 24px;
-	color:#800000;
-	text-align: center;
-	font-family: sans-serif;
-	margin-bottom: 0;
+    padding: 28px;
+    font-size: 24px;
+    color: #800000;
+    text-align: center;
+    font-family: sans-serif;
+    margin-bottom: 0;
 }
 .education{
 }

@@ -1,0 +1,333 @@
+/*CSI 415 overall look*/
+body{
+	font-family: serif;
+}
+p{
+	font-size: 18px;
+}
+footer{
+	align:left;
+	bottom:0;
+	font-size: 14px;
+}
+h3{
+	background-color: rgba(255, 255, 255, 0.5);
+	padding:28px;
+	font-size: 24px;
+	color:#3F007F;
+	align: center;
+	font-family: sans-serif;
+}
+
+.header{
+	min-height: 110px;
+	background-color: #3F007F;
+}
+
+
+/*Menu CSS*/
+h1 {
+	background-color:#3F007F;
+	padding: 25px;
+	font-size: 30px;
+	color: white;
+	font-family: sans-serif;
+}
+.current{
+	background-color: #B2B200;
+}
+.navigation .current:hover{
+	background: #B2B200;
+	border:hidden;
+}
+a{
+	text-decoration: none;
+	boarder-style: hidden;
+	padding:4px;
+}
+a:hover{
+	border:visible;
+	background-color: #FEFF00;
+	text-decoration: none;
+	color: black;
+}
+header, Covers, section
+{border:1px solid #3F007F; margin:5px; padding:8px;}
+div a {
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	padding: 15px;
+	display:inline-block;
+}
+ul {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+ul li {display: inline-block;}
+ul li:hover {background: #555;}
+ul li:hover ul {display: block;}
+ul li ul {
+	position: absolute;
+	width: 200px;
+	display: none;
+}
+ul li ul li { 
+	background: #555; 
+	display: block; 
+}
+ul li ul li a {display:block !important;} 
+ul li ul li:hover {background: #666;}
+
+
+/*table manipulation Mostly Lab 2*/
+tr{
+	border: solid 3px #3F007F;
+}
+th{
+	border: solid 3px #3F007F;
+	background-color: #3F007F;
+	padding: 10px;
+	padding-left: 0px;
+}
+table{
+	margin-bottom: 30px;
+	width: 100%;
+}
+
+tr:nth-child(even){
+	background-color: rgba(63, 0, 127, .5);
+}
+tr:nth-child(odd){
+	background-color: rgba(254, 255, 0, .3);
+}
+.inactive td{
+	background-color: red;
+}
+
+select {
+	color: black;
+}
+
+
+/*Lab 3 CSSS*/
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: black;
+}
+input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: black;
+}
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/*Lab 5*/
+.background {
+	background-image: url("pictures/dungeon.jpg");
+}
+.mapbutton{
+	width: 100%;
+	text-align: center;
+    background-color: #3F007F;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;9
+    cursor: pointer;
+}
+.radioinputs {
+	display: inline-block;
+}
+label{
+	width: 100%;
+}
+.newmap{
+	display: none;
+}
+.radioinputs input:checked + .newmap{
+	display: block;
+}
+.roomdisplay{
+	padding-left: 9vw;
+}
+.room{
+	display: inline-block;
+}
+.room-text{
+	display: none;
+}
+.room:hover .room-text{
+	display: flex;
+	position: absolute;
+}
+.room:hover{
+	background-color: purple;
+	cursor: pointer;
+}
+.empty{
+	background-color: white;
+
+}
+.goal{
+	background-color: green;
+}
+.enemy{
+	background-color: red;
+}
+.key{
+	background-color: lightblue;
+}
+.lock{
+	background-color: darkblue;
+}
+.blank{
+	background-color: #171717;
+}
+.blank:hover{
+	background-color: #171717;
+	cursor: not-allowed;
+}
+#rooms{
+	display: none;
+}
+.Upper input:checked + .UpperAdj{
+	display: block !important;
+}
+.Left input:checked + .LeftAdj{
+	display: block !important;
+}
+.Right input:checked + .RightAdj{
+	display: block !important;
+}
+.Lower input:checked + .LowerAdj{
+	display: block !important;
+}
+.Selected input:checked + .SelectedAdj{
+	display: block !important;
+}
+
+/* The Modal (background) */
+.keymodal, .lockmodal{
+    display: none;  /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+
+/* Modal Content */
+.modal-content {
+    position: fixed;
+    bottom: 0;
+    background-color: #fefefe;
+    width: 100%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+}
+
+/* The Close Button */
+.keyclose, .lockclose {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.keyclose:hover, .lockclose:hover,
+.keyclose:focus, .lockclose:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+/* Add Animation */
+@-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+button{
+	width: 100%;
+	background-color: #3F007F;
+}
+button:hover{
+	background-color: #B2B200;
+}
+.error{
+	font-weight: bold;
+	color: red;
+}
+#keylockinput{
+	color: black;
+}
+.resume{
+	text-align: center;
+}
+.map-text{
+	width: 100%;
+}

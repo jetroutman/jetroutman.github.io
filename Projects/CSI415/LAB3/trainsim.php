@@ -1,0 +1,1 @@
+<?php exec("java C:\Users\jettr\Documents\Class_Material\CSI 415\TrainSimulation\src\trainsimulation\TrainSimulation.java arguments", $output); ?>

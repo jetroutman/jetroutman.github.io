@@ -21,7 +21,7 @@ p{
 	display: inline-flex;
 }
 .menu-items a{
-	width: calc(100vw / 6);
+	width: calc(100vw / 60);
 }
 .navigation{
 	z-index: 100;
@@ -265,7 +265,7 @@ h1 {
 .caption-layer:hover{
 	transition: all .3s ease-out;
 }
-@media(max-width: 787px){
+@media(max-width: 576px){
 	.square-div > .caption-layer {
 		visibility: visible;
 	}

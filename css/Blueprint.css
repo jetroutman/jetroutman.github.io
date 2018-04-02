@@ -8,7 +8,6 @@ body{
 	overflow-x: hidden;
 }
 p{
-	font-size: 16px;
 	line-height: 1.75em;
 }
 
@@ -21,7 +20,7 @@ p{
 	display: inline-flex;
 }
 .menu-items a{
-	width: calc(100vw / 7);
+	width: calc(100vw / 6);
 }
 .navigation{
 	z-index: 100;
@@ -39,12 +38,15 @@ a, a:hover, a:focus{
 	color: white;
 }
 a:hover{
-	background-color: rgb(251, 26, 37);
+	background-color: rgb(128, 0, 0);
+}
+.title-link:hover{
+	background-color: transparent;
 }
 .current{
 	text-decoration: none;
 	color: white;
-	background-color: rgb(251, 26, 37);
+	background-color: rgb(128, 0, 0);
 }
 
 /*Responsive Menu*/
@@ -66,7 +68,7 @@ a:hover{
 	left: 0;
 	width: 280px;
 	display: block;
-	height: calc(100vh/7);
+	height: calc(100vh/6);
 	text-align: center;
 }
 .mini-nav a:before {
@@ -92,7 +94,7 @@ a:hover{
     cursor: pointer;
 }
 .mini-nav span{
-	background-color: rgb(251, 26, 37);
+	background-color: rgb(128, 0, 0);
 	display: block;
     width: 22px;
     height: 4px;
@@ -114,17 +116,17 @@ h3{
 	background-color: white;
 	padding:28px;
 	font-size: 24px;
-	color:rgb(251, 26, 37);
+	color:rgb(128, 0, 0);
 	text-align: center;
 	font-family: sans-serif;
 }
 .header{
 	margin: 0;
 	min-height: 100px;
-	background-color: rgb(251, 26, 37);
+	background-color: rgb(128, 0, 0);
 }
 h1 {
-	background-color:rgb(251, 26, 37);
+	background-color:rgb(128, 0, 0);
 	padding: 25px;
 	font-size: 30px;
 	color: white;
@@ -145,15 +147,15 @@ h1 {
 	text-align: center;
 }
 
+/*Only for Home page*/
 /*Story*/
 .what{
-	background-color: rgb(251, 26, 37);
+	background-color: rgb(128, 0, 0);
 	background-image: url("../pictures/backgrounds/What.svg");
 	background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 48px;
-	display: inline-flex;
-	min-height: 100vh;
+	display: flex;
 }
 .title-left{
 	text-align: center;
@@ -163,7 +165,7 @@ h1 {
 	padding: 48px;
 }
 .content-right{
-	background-color: black;
+	background-color: #171717;
 	position: relative;
 	width: 50%;
 }
@@ -185,7 +187,7 @@ h1 {
 @media(max-width: 787px){
   .title-left{
     width: 100%;
-    background-color: rgb(251, 26, 37);
+    background-color: rgb(128, 0, 0);
     background-image: url("../pictures/backgrounds/What.svg");
 	background-repeat: no-repeat;
 	background-position: 48px;
@@ -199,75 +201,77 @@ h1 {
   }
 }
 
-/*Links to other pages*/
-.resume-button{
-   border: 1px solid #ffffff;
-   background: #ad0009;
-   background: -webkit-gradient(linear, left top, left bottom, from(#fb1a25), to(#ad0009));
-   background: -webkit-linear-gradient(top, #fb1a25, #ad0009);
-   background: -moz-linear-gradient(top, #fb1a25, #ad0009);
-   background: -ms-linear-gradient(top, #fb1a25, #ad0009);
-   background: -o-linear-gradient(top, #fb1a25, #ad0009);
-   background-image: -ms-linear-gradient(top, #fb1a25 0%, #ad0009 100%);
-   padding: 60px 60px;
-   -webkit-border-radius: 6px;
-   -moz-border-radius: 6px;
-   border-radius: 6px;
-   -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
-   -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
-   box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
-   text-shadow: #ad0009 0 1px 0;
-   color: #ffffff;
-   font-size: 14px;
-   font-family: helvetica, serif;
-   text-decoration: none;
-   vertical-align: middle;
+/*Page links*/
+.square-div{
+	width: 100%;
 }
-.resume-button:hover {
-   border: 1px solid #0a3c59;
-   text-shadow: #1e4158 0 1px 0;
-   background: #ad0009;
-   background: -webkit-gradient(linear, left top, left bottom, from(#fb1a25), to(#ad0009));
-   background: -webkit-linear-gradient(top, #fb1a25, #ad0009);
-   background: -moz-linear-gradient(top, #fb1a25, #ad0009);
-   background: -ms-linear-gradient(top, #fb1a25, #ad0009);
-   background: -o-linear-gradient(top, #fb1a25, #ad0009);
-   background-image: -ms-linear-gradient(top, #fb1a25 0%, #ad0009 100%);
-   color: #fff;
-}
-.resume-button:active {
-   text-shadow: #1e4158 0 1px 0;
-   border: 1px solid #0a3c59;
-   background: #fb1a25;
-   background: -webkit-gradient(linear, left top, left bottom, from(#fb1a25), to(#fb1a25));
-   background: -webkit-linear-gradient(top, #ad0009, #fb1a25);
-   background: -moz-linear-gradient(top, #ad0009, #fb1a25);
-   background: -ms-linear-gradient(top, #ad0009, #fb1a25);
-   background: -o-linear-gradient(top, #ad0009, #fb1a25);
-   background-image: -ms-linear-gradient(top, #ad0009 0%, #fb1a25 100%);
-   color: #fff;
+.square-div:after{
+	content: "";
+	display: block;
+	padding-bottom: 100%;
 }
 .resume{
-	vertical-align: center;
-	text-align: center;
-	margin-bottom: 12px;
+	background-image: url("../pictures/backgrounds/resume.jpg");
+	background-repeat: no-repeat;
+	background-size: auto 100%;
 }
- .resume a{
- 	font-size: 36px;
- 	height: 100%;
- 	width: 100%;
- 	display: block;
- }
-.csi a:hover, .future a:hover{
-	background-color: #171717;
+.classes{
+	background-image: url("../pictures/backgrounds/classes.jpg");
+	background-repeat: no-repeat;
+	background-size: auto 100%;
 }
-.csi a, .future a{
-	background-color: rgba(255, 255, 255, 0.5);
-	font-size: 24px;
-	color:rgb(251, 26, 37);
+.projects{
+	background-image: url("../pictures/backgrounds/projects.jpg");
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+}
+.music{
+	background-image: url("../pictures/backgrounds/music.jpg");
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+}
+.img-caption{
+	position: absolute;
+	top: 40%;
+	width: 100%;
+}
+.img-caption p{
 	text-align: center;
-	font-family: sans-serif;
-	display: block;
+	margin-bottom: 2px;
+}
+.img-caption a{
+	border-width: 2px;
+    border-color: white;
+    border-style: solid;
+    padding: 5px;
+    font-family: sans-serif;
+}
+.caption-layer{
+	background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 15px;
+    right: 15px;
+    height: 100%;
+}
+.square-div > .caption-layer {
+	visibility: hidden;
+}
+.square-div:hover > .caption-layer {
+	visibility: visible;
+	transition: opacity .1s ease-out;
+}
+.caption-layer:hover{
+	transition: all .3s ease-out;
+}
+@media(max-width: 576px){
+	.square-div > .caption-layer {
+		visibility: visible;
+	}
+}
+.caption-blocks{
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
 /*Spherical Images*/
@@ -282,7 +286,8 @@ h1 {
 	display:inline-block;
 }
 
-/*Resume Stuff*/
+
+/*Resume Page Stuff*/
 h2{
 	background-color: rgba(255, 255, 255, 0.5);
     padding: 28px;
@@ -291,8 +296,6 @@ h2{
     text-align: center;
     font-family: sans-serif;
     margin-bottom: 0;
-}
-.education{
 }
 .left, ul{
 	margin-left: 15px;
@@ -322,7 +325,47 @@ h2{
     margin-right: -15px;
 }
 
+/*Classes*/
+.database{
+	background-image: url("../pictures/backgrounds/database.jpg");
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+}
+.AI{
+	background-image: url("../pictures/backgrounds/AI.jpg");
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+}
+.software{
+	background-image: url("../pictures/backgrounds/software.jpg");
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+}
 
+/*Future*/
+.senior{
+	background-image: url("../pictures/backgrounds/senior.jpg");
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+}
+.virtial{
+	background-image: url("../pictures/backgrounds/virtial.jpg");
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+}
+.intern{
+	background-image: url("../pictures/backgrounds/intern.jpg");
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+}
+
+
+/*Music*/
+.music-portfolio{
+	background-image: url("../pictures/backgrounds/music_portfolio.jpg");
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+}
 /*Games Stuff*/
 /*Gallery*/
 #galleryList{
@@ -332,10 +375,4 @@ h2{
 
 .email a:hover{
 	background-color: transparent;
-}
-
-audio{
-  width: 100%;
-  zposition: fixed;
-  bottom: 0;
 }

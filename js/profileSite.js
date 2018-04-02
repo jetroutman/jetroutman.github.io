@@ -16,7 +16,7 @@ $(document).ready(function () {
 });
 
 function windowWidth(){
-	if ($(window).width() < 754){
+	if ($(window).width() < 788){
 		$(".container-fluid").addClass("mini-body");
 		$(".navigation").addClass("mini-nav");
 	}else{

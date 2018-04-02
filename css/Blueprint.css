@@ -21,7 +21,7 @@ p{
 	display: inline-flex;
 }
 .menu-items a{
-	width: calc(100vw / 7);
+	width: calc(100vw / 6);
 }
 .navigation{
 	z-index: 100;
@@ -40,6 +40,9 @@ a, a:hover, a:focus{
 }
 a:hover{
 	background-color: rgb(128, 0, 0);
+}
+.title-link:hover{
+	background-color: transparent;
 }
 .current{
 	text-decoration: none;
@@ -145,6 +148,7 @@ h1 {
 	text-align: center;
 }
 
+/*Only for Home page*/
 /*Story*/
 .what{
 	background-color: rgb(128, 0, 0);
@@ -181,29 +185,6 @@ h1 {
 .column-2 p{
 	margin-bottom: 1em;
 }
-/*classes*/
-.classes{
-	background-color: rgb(128, 0, 0);
-	background-image: url("../pictures/backgrounds/classes.svg");
-	background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 48px;
-    display: flex;
-}
-.content-left{
-	width: 70vw;
-}
-.title-right button{
-	display: block;
-}
-.title-right button:before {
-  content: '';
-/*   content: '';
-  margin-left: -0.25em; */
-  display: inline-block;
-  height: 100%; 
-  vertical-align: middle;
- }
 @media(max-width: 787px){
   .title-left{
     width: 100%;
@@ -219,20 +200,79 @@ h1 {
   .what{
   	display: block;
   }
-
 }
 
-/*Links to other pages*/
-.csi a:hover, .future a:hover{
-	background-color: #171717;
+/*Page links*/
+.square-div{
+	width: 100%;
 }
-.csi a, .future a{
-	background-color: rgba(255, 255, 255, 0.5);
-	font-size: 24px;
-	color:rgb(128, 0, 0);
-	text-align: center;
-	font-family: sans-serif;
+.square-div:after{
+	content: "";
 	display: block;
+	padding-bottom: 100%;
+}
+.resume{
+	background-image: url("../pictures/backgrounds/resume.jpg");
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+}
+.classes{
+	background-image: url("../pictures/backgrounds/classes.jpg");
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+}
+.projects{
+	background-image: url("../pictures/backgrounds/projects.jpg");
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+}
+.music{
+	background-image: url("../pictures/backgrounds/music.jpg");
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+}
+.img-caption{
+	position: absolute;
+	top: 40%;
+	width: 100%;
+}
+.img-caption p{
+	text-align: center;
+	margin-bottom: 2px;
+}
+.img-caption a{
+	border-width: 2px;
+    border-color: white;
+    border-style: solid;
+    padding: 5px;
+    font-family: sans-serif;
+}
+.caption-layer{
+	background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 15px;
+    right: 15px;
+    height: 100%;
+}
+.square-div > .caption-layer {
+	visibility: hidden;
+}
+.square-div:hover > .caption-layer {
+	visibility: visible;
+	transition: opacity .1s ease-out;
+}
+.caption-layer:hover{
+	transition: all .3s ease-out;
+}
+@media(max-width: 787px){
+	.square-div > .caption-layer {
+		visibility: visible;
+	}
+}
+.caption-blocks{
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
 /*Spherical Images*/
@@ -247,7 +287,8 @@ h1 {
 	display:inline-block;
 }
 
-/*Resume Stuff*/
+
+/*Resume Page Stuff*/
 h2{
 	background-color: rgba(255, 255, 255, 0.5);
     padding: 28px;
@@ -287,7 +328,6 @@ h2{
     margin-right: -15px;
 }
 
-
 /*Games Stuff*/
 /*Gallery*/
 #galleryList{
@@ -297,10 +337,4 @@ h2{
 
 .email a:hover{
 	background-color: transparent;
-}
-
-audio{
-  width: 100%;
-  zposition: fixed;
-  bottom: 0;
 }

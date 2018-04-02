@@ -8,7 +8,6 @@ body{
 	overflow-x: hidden;
 }
 p{
-	font-size: 16px;
 	line-height: 1.75em;
 }
 
@@ -21,7 +20,7 @@ p{
 	display: inline-flex;
 }
 .menu-items a{
-	width: calc(100vw / 60);
+	width: calc(100vw / 6);
 }
 .navigation{
 	z-index: 100;
@@ -69,7 +68,7 @@ a:hover{
 	left: 0;
 	width: 280px;
 	display: block;
-	height: calc(100vh/7);
+	height: calc(100vh/6);
 	text-align: center;
 }
 .mini-nav a:before {
@@ -298,8 +297,6 @@ h2{
     font-family: sans-serif;
     margin-bottom: 0;
 }
-.education{
-}
 .left, ul{
 	margin-left: 15px;
 	float: left;
@@ -328,6 +325,47 @@ h2{
     margin-right: -15px;
 }
 
+/*Classes*/
+.database{
+	background-image: url("../pictures/backgrounds/database.jpg");
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+}
+.AI{
+	background-image: url("../pictures/backgrounds/AI.jpg");
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+}
+.software{
+	background-image: url("../pictures/backgrounds/software.jpg");
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+}
+
+/*Future*/
+.senior{
+	background-image: url("../pictures/backgrounds/senior.jpg");
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+}
+.virtial{
+	background-image: url("../pictures/backgrounds/virtial.jpg");
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+}
+.intern{
+	background-image: url("../pictures/backgrounds/intern.jpg");
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+}
+
+
+/*Music*/
+.music-portfolio{
+	background-image: url("../pictures/backgrounds/music_portfolio.jpg");
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+}
 /*Games Stuff*/
 /*Gallery*/
 #galleryList{

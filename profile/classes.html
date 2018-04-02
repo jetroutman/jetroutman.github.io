@@ -53,21 +53,41 @@
         <h3 style="margin-top: 10px; margin-bottom: 10px;">The Collaboration of Engineering and Entertainment</h3>
       </div>
     </div>
-    <!--
-    Here's a place holder for a zip of the project <a style="text-decoration: underline;" href="../classes.zip">classes link</a>
-    <p>Note:<br>
-    If you implement the project the project still has security issues some obvious some not so much<br>
-    For instance the current way that it is implemented yo can see the database information from the browser<br>
-    The page is also vulnarble to sql injections, although injecrtions are accounted for not all of them<br>
-    There's even an intersting one where you can implement php commands by entering in hyperlinks and bypass the forms which if done correctly can lead to some errors in the database<br>
-    There's also the issue of using Java to run in the background which would need to change<br>
-    Implementation Coming Soon...</p>
 
-    <p>Database Management Systems<br><br>
-        This course built upon the concepts presented in CSI 215 about database schemeas. Topics covered will included SQL tuning, and the implementation, support, and maintenance of relational databases. In addition, techniques for architecting, building, and scaling databases for future growth were presented. Special emphasis were given to database security, performance, and availability.<br>
-        Throughout the course of the class we built a website using a traditional liniux machine. On the webserver that we hosted we demostrated utilizing php, html, and css and even some Java. The orginal project is no longer being hosted, but using this space I will try to host the orginal project.</p> -->
+    <div class="row">
+      <div class="col-12 col-sm-4 caption-blocks">
+        <div class="square-div database">
+          <div class="caption-layer">
+            <div class="img-caption">
+              <p class="bold-content">CSI 415 Advanced Database Concepts</p>
+              <p><a class="project-link" href="https://github.com/jetroutman/jetroutman.github.io/tree/master/Projects/CSI415">View Project</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-4 caption-blocks">
+        <div class="square-div AI">
+          <div class="caption-layer">
+            <div class="img-caption">
+              <p class="bold-content">CSI 440 Artificial Intelligence</p>
+              <p><a class="project-link" href="https://github.com/jetroutman/jetroutman.github.io/tree/master/Projects/CSI440">View Wumpus World</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-4 caption-blocks">
+        <div class="square-div software">
+          <div class="caption-layer">
+            <div class="img-caption">
+              <p class="bold-content">CSI 410 Software Engineering</p>
+              <p><a href="https://parking-plus-plus.firebaseapp.com/">View Project</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-
+    <h2>Key Classes and their descriptions</h2>
     <h3 class="class-title">CSI 300 Computer Organiz/Architecture</h3>
       <li>
         This course concentrated on the relationship between computing hardware and machine language instruction sets as well as introductory digital electronics. The course examines logic gates, machine language and assembly language. We also studied digital electronics, computer circuit design with small and medium scale integrated circuits. Several computer systems and microprocessors were used as examples.
@@ -82,7 +102,7 @@
       </li>
     <h3 class="class-title">CSI 415 Advanced Database Concepts</h3>
       <li>
-        This course built upon the concepts presented in CSI 215 about database schemeas. Topics covered included SQL tuning, and the implementation, support, and maintenance of relational databases. In addition, techniques for architecting, building, and scaling databases for future growth were presented. Special emphasis were given to database security, performance, and availability.
+        This course built upon the concepts presented in previous database classes, in particular concepts about database schemeas. Topics covered included SQL tuning, and the implementation, support, and maintenance of relational databases. In addition, techniques for architecting, building, and scaling databases for future growth were presented. Special emphasis were given to database security, performance, and availability.
       </li>
     <h3 class="class-title">CSI 425 Web Programming</h3>
       <li>
@@ -106,3 +126,19 @@
 
   </body>
 </html>
+
+<script>
+function openLab(evt, labName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("lab");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" border-red", "");
+  }
+  document.getElementById(labName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " border-red";
+}
+</script>

@@ -367,6 +367,11 @@ h2{
 	background-repeat: no-repeat;
 	background-size: auto 100%;
 }
+.track{
+	background-image: url("../pictures/backgrounds/track.jpg");
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+}
 
 
 /*Music*/

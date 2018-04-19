@@ -243,6 +243,12 @@ third panel*/
 .geek{
   color: orange;
 }
+
+/*Social*/
+.social{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
 /*Music Player Styling*/
 audio{
   width: 100%;

@@ -140,7 +140,6 @@ h1 {
 .portfolio img{
 	width: 100%;
 	height: auto;
-	max-height: 100vh;
 	max-width: 100vw;
 }
 .portfolio p{
@@ -368,7 +367,7 @@ h2{
 	background-size: auto 100%;
 }
 .track{
-	background-image: url("../pictures/backgrounds/trackr.jpg");
+	background-image: url("../pictures/backgrounds/track.jpg");
 	background-repeat: no-repeat;
 	background-size: auto 100%;
 }

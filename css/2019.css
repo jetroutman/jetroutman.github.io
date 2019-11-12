@@ -122,12 +122,13 @@ header{
     bottom: 0;
     width: 101%;
     height: 50px;
-    background-color: #AAA;
+    background-color: #CCC;
     opacity: .8;
     font-size: 38px;
 }
 .exp .expand:hover, .proj .expand:hover, .cls .expand:hover{
-	opacity: 1
+	opacity: 1;
+	cursor: pointer;
 }
 .exp header{
 	background-color: rgba(255, 0, 0, .2)
@@ -137,4 +138,17 @@ header{
 }
 .cls header{
 	background-color: rgba(0, 0, 255, .2)
+}
+.job-location{
+	width: 100%;
+    display: flex;
+}
+.row{
+	margin: 0;
+}
+.left{
+	text-align: left;
+}
+.right{
+	text-align: right;
 }

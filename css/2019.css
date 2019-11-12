@@ -1,0 +1,140 @@
+.header-img{
+	width: 100%;
+	overflow:hidden;
+    max-height: calc(50vw);
+}
+.header-img img{
+	width: 100%;
+    margin-top: -5vw;
+    filter: brightness(55%) contrast(50%);
+}
+.header-title{
+	position: absolute;
+	top: 6vw;
+	right: 20px;
+	max-width: 50%;
+	color: white;
+	text-align: end;
+}
+.header-title h1{
+	font-size: 1.5rem;
+}
+.header-title h4{
+	font-size: 1rem;
+}
+.menu-items{
+	display: flex;
+	background-color: #d3d3d3;
+}
+.menu-item{
+	width: 50%;
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 5px;
+}
+.menu-item:hover, .menu-item:focus{
+	text-decoration: none;
+	color: #8b0000;
+}
+.title-link{
+	position: relative;
+}
+.logo{
+    position: absolute;
+    left: -16px;
+    top: -35px;
+    border: 10px solid #d3d3d3;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.synopsis{
+	margin: 20px;
+    padding: 40px 25px 20px;
+    text-align: center;
+    box-shadow: 5px 5px 10px #888888;
+}
+.synopsis a{
+    color: #888;
+    padding: 14px;
+}
+.download{
+    background: indianred;
+    color: white !important;
+    padding: 7px !important;
+    text-decoration: none;
+}
+.quick-cards{
+	margin: 20px;
+    display: flex;
+    text-align: center;
+}
+.card{
+    border: solid #d3d3d3 1px;
+	margin-bottom: 40px;
+}
+
+/*Resume*/
+.filters h1, .experiences h1{
+	width: 100%;
+	border-bottom: solid #8b0000 1px;
+	color: #8b0000;
+}
+.filter-modal-container{
+	flex-wrap: wrap;
+	width: 100%;
+    display: inline-flex;
+}
+.filter-modal-container h5{
+	width: 100%;
+}
+.filter-option{
+	margin: 0px 10px 5px;
+    height: 2.2rem;
+    background-color: #555;
+    padding: .3rem 15px;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+}
+.filter-selected {
+    background-color: #8b0000;
+}
+header{
+	text-align: center;
+}
+.exp, .proj, .cls{
+	height: 200px;
+    overflow: hidden;
+    position: relative;
+	margin: 10px 0;
+    /*padding: 20px 25px 20px;*/
+    text-align: center;
+    box-shadow: 5px 5px 10px #888888;
+}
+.exp .resume-card, .proj .resume-card, .cls .resume-card{
+    padding: 20px 25px 20px;
+}
+.exp .expand, .proj .expand, .cls .expand{
+	position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 101%;
+    height: 50px;
+    background-color: #AAA;
+    opacity: .8;
+    font-size: 38px;
+}
+.exp .expand:hover, .proj .expand:hover, .cls .expand:hover{
+	opacity: 1
+}
+.exp header{
+	background-color: rgba(255, 0, 0, .2)
+}
+.proj header{
+	background-color: rgba(0, 255, 0, .2)
+}
+.cls header{
+	background-color: rgba(0, 0, 255, .2)
+}

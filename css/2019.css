@@ -104,19 +104,31 @@
 header{
 	text-align: center;
 }
+.card-container{
+	width: 100%;
+    flex: 100%;
+    transition: max-width .5s;
+}
+.open-card{
+	max-width: 100%;
+}
+.open-card div:first-child{
+	min-height: 600px;
+}
 .exp, .proj, .cls{
-	height: 220px;
+	height: 300px;
     overflow: hidden;
     position: relative;
 	margin: 10px 0;
-    /*padding: 20px 25px 20px;*/
     text-align: center;
     box-shadow: 5px 5px 10px #888888;
+    min-height: 300px;
+	transition: min-height .5s;
 }
 .exp .resume-card, .proj .resume-card, .cls .resume-card{
-    padding: 20px 25px 20px;
+    padding: 11px 18px 20px;
 }
-.exp .expand, .proj .expand, .cls .expand{
+.expand, .collapse{
 	position: absolute;
     left: 0;
     bottom: 0;
@@ -126,7 +138,10 @@ header{
     opacity: .8;
     font-size: 38px;
 }
-.exp .expand:hover, .proj .expand:hover, .cls .expand:hover{
+.collapse{
+	display: none;
+}
+.expand:hover, .collapse:hover{
 	opacity: 1;
 	cursor: pointer;
 }

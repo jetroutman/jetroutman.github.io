@@ -19,6 +19,18 @@ $(document).ready(function () {
 		}
 		filterEntries();
 	});
+
+	$(".expand").click(function(){
+		$(this).css("display", "none");
+		$(this).parent().children(".collapse").css("display", "unset");
+		$(this).parent().parent().parent().addClass("open-card");
+	});
+
+	$(".collapse").click(function(){
+		$(this).css("display", "none");
+		$(this).parent().children(".expand").css("display", "unset");
+		$(this).parent().parent().parent().removeClass("open-card");
+	});
 });
 
 function filterEntries(){

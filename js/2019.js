@@ -35,9 +35,18 @@ $(document).ready(function () {
 
 function filterEntries(){
 	//Filter the selected Experiences
-	var filter = "";
+	var filter = [];
 	var selected = $(".filter-selected");
 	for(var i = 0; i < selected.length; i++){
-	    filter += selected[i].attributes['data-val'].value;
+	    filter.push(selected[i].attributes['data-val'].value);
+	}
+	var cards = $(".card-container label")
+	for (var i = cards.length - 1; i >= 0; i--) {
+		var str = cards[i].innerText.split(", ");
+		if(filter.some(elem => str.indexOf(elem) > -1)){
+			$($(".card-container")[i]).css("display", "unset");
+		}else{
+			$($(".card-container")[i]).css("display", "none");
+		}
 	}
 }

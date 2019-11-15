@@ -109,6 +109,9 @@ header{
     flex: 100%;
     transition: max-width .5s;
 }
+.card-container label{
+	display: none;
+}
 .open-card{
 	max-width: 100%;
 }
@@ -136,7 +139,7 @@ header{
     height: 50px;
     background-color: #CCC;
     opacity: .8;
-    font-size: 38px;
+    font-size: 32px;
 }
 .collapse{
 	display: none;

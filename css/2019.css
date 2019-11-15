@@ -1,11 +1,12 @@
 .header-img{
 	width: 100%;
 	overflow:hidden;
-    max-height: calc(50vw);
+    height: calc(50vw);
+    max-height: 500px;
 }
 .header-img img{
-	width: 100%;
-    margin-top: -5vw;
+    width: 100%;
+    margin-top: -10vw;
     filter: brightness(55%) contrast(50%);
 }
 .header-title{

@@ -82,6 +82,12 @@
 	border-bottom: solid #8b0000 1px;
 	color: #8b0000;
 }
+.filters, .experiences{
+    padding: 10px;
+}
+.filters{
+	margin-top: 40px;
+}
 .filter-modal-container{
 	flex-wrap: wrap;
 	width: 100%;

@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="../css/2019.css"/>
     <script src="../js/jquery-3.1.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="../js/2019.js"></script>
   </head>
 
@@ -174,6 +175,7 @@
           <div class="resume-card">
             <p>Created Virtual Reality walk through using Unreal Engines for redesigning facilities and marketing</p>
             <p><b>Skills Used:</b> C++, Unreal Engines, Blender</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#walkThru">View Walk-Thru</button>
             <label>C++, UE4, Blender</label>
           </div>
         </div>
@@ -408,6 +410,41 @@
             <div class="expand">&#9660</div>
             <div class="collapse">&#9650</div>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="walkThru" tabindex="-1" role="dialog" aria-labelledby="examplewalkThru" aria-hidden="true">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Virtual Reality Walk Thru</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img class="Walk-Thru" src="../pictures/thehub/8-11-17_UE.jpg">
+          <img class="Walk-Thru" src="../pictures/thehub/Hub_Layout_UE.jpg">
+          <img class="Walk-Thru" src="../pictures/thehub/Hub_UE.jpg">
+          <img class="Walk-Thru" src="../pictures/thehub/HUB2_UE.jpg">
+          <img class="Walk-Thru" src="../pictures/thehub/The_Hub_Dimensions.jpg">
+          <img class="Walk-Thru" src="../pictures/thehub/The_Hub_Layout.jpg">
+          <img class="Walk-Thru" src="../pictures/thehub/TheHub01.jpg">
+          <img class="Walk-Thru" src="../pictures/thehub/TheHub02.jpg">
+          <div class="slide-controller">
+            <div class="pic-left" onclick="plusDivs(-1, 'Walk-Thru')">&#10094;</div>
+            <div class="pic-right" onclick="plusDivs(1, 'Walk-Thru')">&#10095;</div>
+            <span class="pic-badge Walk-Thru-dots" onclick="currentDiv(1, 'Walk-Thru')"></span>
+            <span class="pic-badge Walk-Thru-dots" onclick="currentDiv(2, 'Walk-Thru')"></span>
+            <span class="pic-badge Walk-Thru-dots" onclick="currentDiv(3, 'Walk-Thru')"></span>
+            <span class="pic-badge Walk-Thru-dots" onclick="currentDiv(4, 'Walk-Thru')"></span>
+            <span class="pic-badge Walk-Thru-dots" onclick="currentDiv(5, 'Walk-Thru')"></span>
+            <span class="pic-badge Walk-Thru-dots" onclick="currentDiv(6, 'Walk-Thru')"></span>
+            <span class="pic-badge Walk-Thru-dots" onclick="currentDiv(7, 'Walk-Thru')"></span>
+            <span class="pic-badge Walk-Thru-dots" onclick="currentDiv(8, 'Walk-Thru')"></span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>

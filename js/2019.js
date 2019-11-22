@@ -31,6 +31,8 @@ $(document).ready(function () {
 		$(this).parent().children(".expand").css("display", "unset");
 		$(this).parent().parent().parent().removeClass("open-card");
 	});
+
+	showDivs(slideIndex, "Walk-Thru");
 });
 
 function filterEntries(){
@@ -56,4 +58,31 @@ function filterEntries(){
 			$($(".card-container")[i]).css("display", "unset");
 		}
 	}
+}
+
+
+// Pictures -- Walk-Thru
+var slideIndex = 1;
+function plusDivs(n, title) {
+  showDivs(slideIndex += n, title);
+}
+
+function currentDiv(n, title) {
+  showDivs(slideIndex = n, title);
+}
+
+function showDivs(n, title) {
+  var i;
+  var x = document.getElementsByClassName(title);
+  var dots = document.getElementsByClassName(title + "-dots");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" pic-badge-fill", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " pic-badge-fill";
 }

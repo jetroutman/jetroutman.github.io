@@ -177,3 +177,52 @@ header{
 .right{
 	text-align: right;
 }
+/*Modal Css*/
+.modal{
+    width: 80vw;
+    margin: auto;
+    height: 80vh;
+    padding: 0 !important;
+    overflow: hidden !important;
+}
+.modal-body{
+	padding: 0;
+	height: calc(80vh - 131px);
+}
+.modal-body img{
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+.slide-controller{
+	width: 100%;
+	color: #FFF;
+	text-align: center;
+	margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 18px;
+    padding: 0.01em 16px;
+    position: absolute;
+    bottom: 0;
+}
+.pic-left, .pic-right, .pic-badge{
+	cursor: pointer;
+}
+.pic-left{
+	float: left;
+}
+.pic-right{
+	float: right;
+}
+.pic-badge{
+	height: 13px;
+    width: 13px;
+    padding: 0;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    display: inline-block;
+}
+.pic-badge-fill{
+	background-color: #FFF;
+}

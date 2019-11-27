@@ -204,6 +204,7 @@ header{
     padding: 0.01em 16px;
     position: absolute;
     bottom: 0;
+    background-color: rgba(255, 255, 255, .5)
 }
 .pic-left, .pic-right, .pic-badge{
 	cursor: pointer;

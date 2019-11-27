@@ -33,6 +33,7 @@ $(document).ready(function () {
 	});
 
 	showDivs(slideIndex, "Walk-Thru");
+	showDivs(slideIndex, "CSI-497");
 });
 
 function filterEntries(){

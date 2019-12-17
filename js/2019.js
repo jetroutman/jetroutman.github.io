@@ -8,6 +8,8 @@ function menuDisplay(){
 	$(".navigation").addClass("active");
 }
 
+window.addEventListener('resize', resizer);//Resize images on about me page on resize
+
 $(document).ready(function () {
 	//Adds on-click functionality to each filter option
 	$(".filter-option").click(function(){
@@ -31,10 +33,18 @@ $(document).ready(function () {
 		$(this).parent().children(".expand").css("display", "unset");
 		$(this).parent().parent().parent().removeClass("open-card");
 	});
+	if (slideIndex) {
+		showDivs(slideIndex, "Walk-Thru");
+		showDivs(slideIndex, "CSI-497");
+	}
 
-	showDivs(slideIndex, "Walk-Thru");
-	showDivs(slideIndex, "CSI-497");
+	resizer();
 });
+
+function resizer(){
+    var cw = $('.img-panel').width();
+	$('.img-panel').css({'height':cw+'px'});
+}
 
 function filterEntries(){
 	//Filter the selected Experiences
@@ -73,17 +83,19 @@ function currentDiv(n, title) {
 }
 
 function showDivs(n, title) {
-  var i;
-  var x = document.getElementsByClassName(title);
-  var dots = document.getElementsByClassName(title + "-dots");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" pic-badge-fill", "");
-  }
-  x[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " pic-badge-fill";
+	var i;
+	var x = document.getElementsByClassName(title);
+	var dots = document.getElementsByClassName(title + "-dots");
+	if (n > x.length) {slideIndex = 1}
+	if (n < 1) {slideIndex = x.length}
+	for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";
+	}
+	for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" pic-badge-fill", "");
+	}
+	if(x.length > 0){//Checks for valid title
+		x[slideIndex-1].style.display = "block";
+		dots[slideIndex-1].className += " pic-badge-fill";
+	}
 }

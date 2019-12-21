@@ -38,6 +38,21 @@ $(document).ready(function () {
 		showDivs(slideIndex, "CSI-497");
 	}
 
+	$(".card-extra").click(function(){
+		if($(this).parent().children().hasClass("extra-open")){
+			$(this).parent().children(".extra").removeClass("extra-open");
+			var child = $(this).parent().children(".extra");
+			setTimeout(function(){
+				$(child).css("display", "none");
+			}, 500);
+		}else{
+			$(this).parent().children(".extra").css("display", "unset");
+			var child = $(this).parent().children(".extra");
+			setTimeout(function(){
+				$(child).addClass("extra-open");
+			}, 10);
+		}
+	})
 	resizer();
 });
 

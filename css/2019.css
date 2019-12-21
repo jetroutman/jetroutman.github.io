@@ -66,13 +66,17 @@
     padding: 7px !important;
     text-decoration: none;
 }
+.download:hover{
+	text-decoration: none;
+}
 .quick-cards{
 	margin: 20px;
     display: flex;
     text-align: center;
 }
 .card{
-    height: 320px;
+    height: auto;
+    min-height: 320px;
     border: solid #d3d3d3 1px;
     padding: 5px 10px 10px;
     border-radius: 2.25rem;
@@ -99,6 +103,19 @@
 .card-stats p:nth-child(2){
 	float: right;
 }
+.card-extra{
+	cursor: pointer;
+}
+.extra{
+	display: none;
+	max-height: 0px;
+    overflow-y: hidden;
+    height: auto;
+    transition: max-height .5s;
+}
+.extra-open{
+	max-height: 100px;
+}
 .card-extra i{
 	line-height: 35px;
     padding-left: 10px;
@@ -117,6 +134,14 @@
     position: absolute;
     opacity: .85;
     background-color: #cd5c5c;
+}
+.btn-primary{
+	background-color: #959fa8;
+	border-color: #959fa8;
+}
+.btn-primary:hover{
+	background-color: #a50202;
+	border-color: #a50202;
 }
 
 
@@ -291,7 +316,7 @@ header{
 }
 .slide-controller{
 	width: 100%;
-	color: #FFF;
+	color: #000;
 	text-align: center;
 	margin-top: 16px;
     margin-bottom: 16px;
@@ -315,10 +340,10 @@ header{
     width: 13px;
     padding: 0;
     background-color: transparent;
-    border: 1px solid #ccc;
+    border: 1px solid #333;
     border-radius: 50%;
     display: inline-block;
 }
 .pic-badge-fill{
-	background-color: #FFF;
+	background-color: #000;
 }

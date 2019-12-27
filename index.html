@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" href="pictures/IS.ico">
+    <link rel="icon" href="pictures/JT.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Innovative Studios</title>
@@ -16,74 +16,264 @@
     <![endif]-->
 
     <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
-	<style>
-		body{
-			background-image: url(pictures/backgrounds/books.jpeg);
-			background-size: cover;
-			height: 100vh;
-			padding: 0;
-		}
-		.background{
-			background-color: rgba(30, 30, 30, .6);
-			position: absolute;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			color: White;
-		}
-		.background h1{
-			text-align: center;
-			padding: 0px 0px 0px 0px;
-			font-size: 130px;
-			font-family: serif;
-		}
-		.text{
-			padding: 0 0;
-			padding-left: 40px;
-			top: 50%;
-			position: absolute;
-		}
-		.text a{
-			border-radius: 12px;
-			padding: 15px;
-			color: white;
-			text-decoration: none;
-			display: inline-block;
-		}
-		@media(max-width: 970px){
-		  .background h1{
-		  	font-size: calc((100vw / 12) + 40px);
-		  }
-		  .text{
-		  	padding: 0;
-		  	top: 40%;
-		  	text-align: center;
-		  }
-		}
-		.profile{
-			background-color: rgba(135, 6, 6, .5);
-		}
-		.profile:hover{
-			color: rgb(255, 190, 26);
-		}
-		.mck{
-			background-color: rgba(100, 32, 181, .5);
-		}
-		.mck:hover{
-			color: rgb(255, 190, 26);
-		}
-	</style>
+    <link type="text/css" rel="stylesheet" href="css/2019.css"/>
+    <!-- Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/2019.js"></script>
   </head>
 
 
-  <body class="container-fluid">
-	<div class="background">
-		<div class="text">
-			<h1>Devoted Student</h1>
-			<p>In constant persuit of acquiring knowledge and insight</p>
-			<a class="profile" href="profile/home.html">The last McKendree University Interactive Media Major</a>
-			<a class="mck" href="mck/home.html">Exploring Knowledge?</a>
-		</div>
-	</div>
+  <body>
+    <div class="header">
+      <div class="header-img">
+        <img src="pictures/backgrounds/Jacob_Troutman_bg.jpg">
+      </div>
+      <div class="header-title">
+        <h1>Jacob Troutman</h1>
+        <h4>Software Devloper</h4>
+      </div>
+    </div>
+
+    <div id="nav">
+      <div class="menu-items">
+        <a class="menu-item" href="2019/about.html">About Me</a>
+        <a class="title-link" href="#" style="width: 120px;">
+          <div class="logo">
+            <img src="pictures/backgrounds/Jacob_Troutman_Home.jpg" style="width: 100px; height: 100px;">
+          </div>
+        </a>
+        <a class="menu-item" href="2019/resume.html">Resume</a>
+      </div>
+    </div>
+
+    <div class="synopsis">
+      <a href="https://www.facebook.com/jacob.troutman.31"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://twitter.com/J__Tr0"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/jacob-troutman"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.instagram.com/j_tro1/"><i class="fab fa-instagram"></i></a>
+      <p>Experienced Developer with a demonstrated history of working in the marketing and advertising industry. Skilled in Teamwork, Leadership, C#, Front-end Development, and C++. Strong engineering professional with a Bachelor’s Degree focused in Game and Interactive Media Design from McKendree University.</p>
+      <a class="download" href="documents/Résumé 9.0.docx" download>Download Resume</a>
+    </div>
+
+    <div class="passion section">
+      <h2>Passion Projects</h2>
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4" style="padding: 5px 5px 10px;">
+          <div class="pass">
+            <h4>Drinking Game</h4>
+            <p>Created a drinking game application to demonstrate potential uses for Google Firebase</p>
+            <p>Created a random card generator that increases the probability of pulling less pulled cards</p>
+            <p>Created Web Forms and Tables that displayed the information seamlessly on desktop, phone and tablet</p>
+            <p>Practiced continuous integration to improve the user experience</p>
+            <p><b>Skills Used:</b> Google Firebase, HTML5, CSS3, JavaScript</p>
+            <a class="btn btn-primary" href="https://jacobtroutman.com/">Visit JacobTroutman.com</a>
+            <p style="padding-bottom: 14px;"></p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4" style="padding: 5px;">
+          <div class="pass">
+            <h4>Budgeting Loan App</h4>
+            <p>Created a software that optimized loan payments based off either desired pay off dates or maximum payments</p>
+            <p><b>Skills Used:</b> C++</p>
+            <p>Integrated the loan software into a firebase application to allow for a better user experience</p>
+            <p>Reworked the loan app into a budgeting tracker to assist in highlighting areas where a user's budgeting could use improvements</p>
+            <p><b>Skills Used:</b> Google Firebase, HTML5, CSS3, JavaScript</p>
+            <a class="btn btn-primary" href="https://polykowledge.com/">Visit Polyknowledge</a>
+            <p style="padding-bottom: 14px;"></p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4" style="padding: 5px;">
+          <div class="pass">
+            <h4>Resume Website</h4>
+            <p>Created a website to market current skills</p>
+            <p>Practiced continuous integration processes for stable and regular releases</p>
+            <p><b>Skills Used:</b> HTML5, CSS3, JavaScript</p>
+            <!-- <a class="btn btn-primary" href="index.html">Visit Legacy Site 2015</a> -->
+            <p style="padding-bottom: 14px;"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="quick-cards row">
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card card-1">
+          <h3>Industry Knowledge</h3>
+          <div class="row">
+            <div class="card-stats">
+              <p>Front-end Development</p><p>60%</p>
+              <div class="percentage-background">
+                <div class="percentage-value" style="width: 60%"></div>
+              </div>
+            </div>
+            <div class="card-extra">
+              <i class="fas fa-sticky-note"></i>
+            </div>
+            <div class="extra col-12" style="margin-bottom: 12px;">
+              <a class="btn btn-primary" href="files/JSTest20191218.pdf">JS IKM Test Results</a>
+            </div>
+            <div class="extra col-12" style="margin-bottom: 12px;">
+              <a class="btn btn-primary" href="https://polykowledge.com/">Polyknowledge</a>
+            </div>
+            <div class="extra col-12">
+              <a class="btn btn-primary" href="https://jacobtroutman.com/">Drinking Game</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="card-stats">
+              <p>Back-End Web Development</p><p>100%</p>
+              <div class="percentage-background">
+                <div class="percentage-value" style="width: 100%"></div>
+              </div>
+            </div>
+            <div class="card-extra">
+              <i class="fas fa-sticky-note"></i>
+            </div>
+            <div class="extra col-12" style="margin-bottom: 12px;">
+              <a class="btn btn-primary" href="https://drive.google.com/drive/folders/1ROahETfE4dT0iuGTepDeh8FU-nU1qNR1?usp=sharing">C++ Examples</a>
+            </div>
+            <div class="extra col-12" style="margin-bottom: 12px;">
+              <a class="btn btn-primary" href="files/C%23Test20191218.pdf">C# IKM Test Results</a>
+            </div>
+            <div class="extra col-12">
+              <a class="btn btn-primary" href="files/JSTest20191218.pdf">SQL IKM Test Results</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="card-stats">
+              <p>Web Development</p><p>80%</p>
+              <div class="percentage-background">
+                <div class="percentage-value" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="card-extra">
+              <i class="fas fa-sticky-note"></i>
+            </div>
+            <div class="extra col-12" style="margin-bottom: 12px;">
+              <a class="btn btn-primary" href="files/C%23Test20191218.pdf">C# IKM Test Results</a>
+            </div>
+            <div class="extra col-12" style="margin-bottom: 12px;">
+              <a class="btn btn-primary" href="https://polykowledge.com/">Polyknowledge</a>
+            </div>
+            <div class="extra col-12">
+              <a class="btn btn-primary" href="https://jacobtroutman.com/">Drinking Game</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-2 col-12 col-md-6 col-lg-4">
+        <div class="card card-2">
+          <h2>Tools & Technologies</h2>
+          <div class="row">
+            <div class="card-stats">
+              <p>C++</p><p>78%</p>
+              <div class="percentage-background">
+                <div class="percentage-value" style="width: 78%"></div>
+              </div>
+            </div>
+            <div class="card-extra">
+              <i class="fas fa-sticky-note"></i>
+            </div>
+            <div class="extra col-12">
+              <a class="btn btn-primary" href="https://drive.google.com/drive/folders/1ROahETfE4dT0iuGTepDeh8FU-nU1qNR1?usp=sharing">C++ IKM Test Results</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="card-stats">
+              <p>C#</p><p>73%</p>
+              <div class="percentage-background">
+                <div class="percentage-value" style="width: 73%"></div>
+              </div>
+            </div>
+            <div class="card-extra">
+              <i class="fas fa-sticky-note"></i>
+            </div>
+            <div class="extra col-12">
+              <a class="btn btn-primary" href="files/C%23Test20191218.pdf">C# IKM Test Results</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="card-stats">
+              <p>HTML5/CSS3</p><p>80%</p>
+              <div class="percentage-background">
+                <div class="percentage-value" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="card-extra">
+              <i class="fas fa-sticky-note"></i>
+            </div>
+            <div class="extra col-12" style="margin-bottom: 12px;">
+              <a class="btn btn-primary" href="https://polykowledge.com/">Polyknowledge</a>
+            </div>
+            <div class="extra col-12">
+              <a class="btn btn-primary" href="https://jacobtroutman.com/">Drinking Game</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="card-stats">
+            <p>JavaScript</p><p>69%</p>
+              <div class="percentage-background">
+                <div class="percentage-value" style="width: 69%"></div>
+              </div>
+            </div>
+            <div class="card-extra">
+              <i class="fas fa-sticky-note"></i>
+            </div>
+            <div class="extra col-12">
+              <a class="btn btn-primary" href="files/JSTest20191218.pdf">JS IKM Test Results</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="card-stats">
+            <p>SQL</p><p>83%</p>
+              <div class="percentage-background">
+                <div class="percentage-value" style="width: 83%"></div>
+              </div>
+            </div>
+            <div class="card-extra">
+              <i class="fas fa-sticky-note"></i>
+            </div>
+            <div class="extra col-12">
+              <a class="btn btn-primary" href="files/JSTest20191218.pdf">SQL IKM Test Results</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-3 col-12 col-md-6 col-lg-4">
+        <div class="card card-3">
+          <h2>Interpersonal Skills</h2>
+          <div class="row">
+            <div class="card-stats">
+              <p>Documentation</p><p>80%</p>
+              <div class="percentage-background">
+                <div class="percentage-value" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="card-extra">
+              <i class="fas fa-sticky-note"></i>
+            </div>
+            <div class="extra col-12">
+              <a class="btn btn-primary" href="https://drive.google.com/open?id=1TjRJrH_zpXP_bDE_FeNrXZEfkML4K8Yu">Documentation Samples</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="card-stats">
+              <p>Communication</p><p>80%</p>
+              <div class="percentage-background">
+                <div class="percentage-value" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="card-extra">
+              <i class="fas fa-sticky-note"></i>
+            </div>
+            <div class="extra col-12">
+              <a class="btn btn-primary" href="https://drive.google.com/open?id=1TjRJrH_zpXP_bDE_FeNrXZEfkML4K8Yu">Documentation Samples</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

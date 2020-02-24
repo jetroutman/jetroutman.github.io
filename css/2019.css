@@ -252,6 +252,12 @@ header{
 .section{
 	margin: 20px;
 }
+.lashback-synopsis{
+    padding: 40px 25px 20px;
+    text-align: center;
+    box-shadow: 5px 5px 10px #888888;
+    background: linear-gradient(135deg, rgba(255,255,255,1), rgba(255, 0, 0, .5));
+}
 .mck-synopsis{
     padding: 40px 25px 20px;
     text-align: center;
